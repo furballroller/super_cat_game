@@ -5,6 +5,7 @@ I built this for Fallout, a 2026 hardware hackathon for 13-18yos backed by Hack 
 
 <img width="1081" height="628" alt="image" src="https://github.com/user-attachments/assets/d636669c-b6bd-40b9-a8e7-e3426bc417cf" />
 A 3D model of the pcb so far (V0)
+looks so professional!! It's so overpriced tho :(
 
 The design I ended up with is a mat, running a feedback loop for an LED grid (WS2812B) and a pressure sensor matrix (velostat). The brains are an ESP32 S3 Devkit clone off of Aliexpress, programmable over the air (OTA) for easy game dev 👍
 
