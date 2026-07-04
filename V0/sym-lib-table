@@ -1,9 +1,0 @@
-(sym_lib_table
-	(version 7)
-	(lib (name "2*17P") (type "EasyEDA (JLCEDA) Std") (uri "/Users/furballroller/Documents/super_cat_game/SCHLIB_X6521WR-2×17H-C30D60_2026-06-21.json") (options "") (descr ""))
-	(lib (name "SN74HC163DR") (type "EasyEDA (JLCEDA) Std") (uri "/Users/furballroller/Documents/super_cat_game/SCHLIB_SN74HC163DR_C338758_2026-06-21.json") (options "") (descr ""))
-	(lib (name "CD74HC6946SM96") (type "EasyEDA (JLCEDA) Std") (uri "/Users/furballroller/Documents/super_cat_game/SCHLIB_CD74HC4067SM96_2026-06-21.json") (options "") (descr ""))
-	(lib (name "USBC") (type "EasyEDA (JLCEDA) Std") (uri "/Users/furballroller/Documents/super_cat_game/SCHLIB_TYPE-C-31-M-12_2026-06-21.json") (options "") (descr ""))
-	(lib (name "_WS2812B") (type "EasyEDA (JLCEDA) Std") (uri "/Users/furballroller/Documents/super_cat_game/SCHLIB_WS2812B-MINI_2026-06-21.json") (options "") (descr ""))
-	(lib (name "_WS2812B-2020-V6") (type "EasyEDA (JLCEDA) Std") (uri "/Users/furballroller/Documents/super_cat_game/SCHLIB_WS2812B-2020-V6_2026-07-02.json") (options "") (descr ""))
-)
