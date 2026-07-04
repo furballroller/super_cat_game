@@ -1,0 +1,41 @@
+{
+  "head": {
+    "docType": "2",
+    "editorVersion": "6.5.54",
+    "x": 400,
+    "y": 300,
+    "c_para": {
+      "pre": "LED?",
+      "name": "WS2812B-MINI",
+      "package": "LED-SMD_4P-L3.5-W3.5-TL_WS2812B",
+      "Contributor": "LCSC",
+      "Supplier": "LCSC",
+      "Supplier Part": "C527089",
+      "Manufacturer": "worldsemi",
+      "Manufacturer Part": "WS2812B-MINI-V3/W",
+      "JLCPCB Part Class": "Extended Part"
+    },
+    "uuid": "902f4cd0c5304519a675be2ee076e142",
+    "puuid": "226176c6090a408f97941d6918aaf715",
+    "importFlag": 0,
+    "c_spiceCmd": null,
+    "hasIdFlag": true,
+    "utime": 1715064603
+  },
+  "canvas": "CA~1000~1000~#FFFFFF~yes~#CCCCCC~5~1000~1000~line~5~pixel~5~400~300",
+  "shape": [
+    "R~370~285~2~2~60~30~#880000~1~0~none~gge1~0~",
+    "E~375~290~1.5~1.5~#880000~1~0~#880000~gge2~0",
+    "P~show~0~1~360~295~180~gge5~0^^360~295^^M360,295h10~#FF0000^^1~373.7~299~0~VDD~start~~~#FF0000^^1~369.5~294~0~1~end~~~#FF0000^^0~367~295^^0~M 370 298 L 373 295 L 370 292",
+    "P~show~0~2~360~305~180~gge6~0^^360~305^^M360,305h10~#880000^^1~373.7~309~0~DOUT~start~~~#0000FF^^1~369.5~304~0~2~end~~~#0000FF^^0~367~305^^0~M 370 308 L 373 305 L 370 302",
+    "P~show~0~3~440~305~0~gge7~0^^440~305^^M440,305h-10~#000000^^1~426.3~309~0~VSS~end~~~#000000^^1~430.5~304~0~3~start~~~#000000^^0~433~305^^0~M 430 302 L 427 305 L 430 308",
+    "P~show~0~4~440~295~0~gge8~0^^440~295^^M440,295h-10~#880000^^1~426.3~299~0~DIN~end~~~#0000FF^^1~430.5~294~0~4~start~~~#0000FF^^0~433~295^^0~M 430 292 L 427 295 L 430 298"
+  ],
+  "BBox": {
+    "x": 359,
+    "y": 284.6,
+    "width": 82,
+    "height": 30.4
+  },
+  "colors": {}
+}
