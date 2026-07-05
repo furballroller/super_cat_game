@@ -3862,221 +3862,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "easyeda2kicad:UT1A471M0607VG"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0 8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "UT1A471M0607VG"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "easyeda2kicad:CAP-SMD_BD6.3-L6.6-W6.6-FD"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-SMD_470uF-10V-20_C82004.html"
-				(at 0 -13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "470uF 10V ±20%"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Chengx(承兴)"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "RVT1A471M0607"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C82004"
-				(at 0 -21.59 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Aluminum Electrolytic Capacitors - SMD"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "UT1A471M0607VG_0_1"
-				(arc
-					(start -1.83 -1.21)
-					(mid 0.09 -0.51)
-					(end 1.95 -1.33)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 0.51)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.51) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.76 2.54) (xy 0.76 1.52)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.03) (xy 0.25 2.03)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.03 0.51) (xy -2.03 0.51)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin input line
-					(at 0 3.81 270)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "easyeda2kicad:X6521WR-2×17H-C30D60"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5540,16 +5325,16 @@
 		(uuid "0a6fea97-fd24-4045-8427-6871ca0951a3")
 	)
 	(junction
-		(at 80.01 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ce94d56-2f86-41bc-8ebb-6ff97581acf3")
-	)
-	(junction
 		(at 60.96 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24e3fbe7-485f-4333-bb99-f8aadbaa0b89")
+	)
+	(junction
+		(at 90.17 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "309c42df-7060-4913-af35-1b01d319a897")
 	)
 	(junction
 		(at 238.76 109.22)
@@ -5568,12 +5353,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f5ff419-d179-4cfa-840d-e645733c5aba")
-	)
-	(junction
-		(at 90.17 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59a61f98-31b0-4183-9662-27570132cde7")
 	)
 	(junction
 		(at 20.32 95.25)
@@ -5598,12 +5377,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7bf47674-ed37-4e15-8b0c-91b2f56b0881")
-	)
-	(junction
-		(at 90.17 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "80b4c77c-f8a5-4eb5-9e4e-e7e8b68727b6")
 	)
 	(junction
 		(at 22.86 144.78)
@@ -5636,16 +5409,16 @@
 		(uuid "aed85e34-3d6b-4b1b-a348-07854bd792a7")
 	)
 	(junction
+		(at 82.55 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b159caf7-519e-4aa2-8267-30d87e7564b3")
+	)
+	(junction
 		(at 55.88 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b38e09c8-c287-4577-a922-957d6f6e3245")
-	)
-	(junction
-		(at 80.01 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b689a2b9-2509-4bbd-b272-6c1b62e087f0")
 	)
 	(junction
 		(at 59.69 154.94)
@@ -5830,16 +5603,6 @@
 			(type default)
 		)
 		(uuid "0d7b8bb0-e3f2-4ea5-8fc2-bb2cf4751fce")
-	)
-	(wire
-		(pts
-			(xy 90.17 66.04) (xy 90.17 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e423eb5-aeff-4475-9a14-68a25ffdbbf4")
 	)
 	(wire
 		(pts
@@ -6343,7 +6106,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 52.07) (xy 87.63 52.07)
+			(xy 82.55 52.07) (xy 87.63 52.07)
 		)
 		(stroke
 			(width 0)
@@ -6513,7 +6276,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 59.69) (xy 90.17 66.04)
+			(xy 90.17 52.07) (xy 90.17 62.23)
 		)
 		(stroke
 			(width 0)
@@ -6550,16 +6313,6 @@
 			(type default)
 		)
 		(uuid "57409aa5-79e9-4e0a-aefe-07b25d9be957")
-	)
-	(wire
-		(pts
-			(xy 88.9 59.69) (xy 90.17 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57901ae6-48c4-4e69-92e1-5335cb139c23")
 	)
 	(wire
 		(pts
@@ -6613,23 +6366,13 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 52.07) (xy 80.01 59.69)
+			(xy 82.55 52.07) (xy 82.55 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5c856435-9fc7-49c4-8be2-57957c2b52d0")
-	)
-	(wire
-		(pts
-			(xy 80.01 59.69) (xy 80.01 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d133126-8020-423d-9bc7-d75db2cd7160")
 	)
 	(wire
 		(pts
@@ -6720,16 +6463,6 @@
 			(type default)
 		)
 		(uuid "6b727923-8b0a-48a5-96ce-5e7ce1aa6069")
-	)
-	(wire
-		(pts
-			(xy 88.9 66.04) (xy 90.17 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70740959-5aac-42fa-8560-ec36f7e37325")
 	)
 	(wire
 		(pts
@@ -7013,6 +6746,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 62.23) (xy 82.55 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2e24df-b2fa-4cb4-b8ca-2a37a1a8e3e1")
+	)
+	(wire
+		(pts
 			(xy 264.16 31.75) (xy 262.89 30.48)
 		)
 		(stroke
@@ -7160,16 +6903,6 @@
 			(type default)
 		)
 		(uuid "9a3f3425-5d00-4131-8295-3f3598051bec")
-	)
-	(wire
-		(pts
-			(xy 80.01 59.69) (xy 81.28 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d8ec792-3d4c-40d3-9f8a-751cf8b3dee6")
 	)
 	(wire
 		(pts
@@ -7423,16 +7156,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 66.04) (xy 80.01 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b80b0d61-5d57-40c9-b35f-9f6608255446")
-	)
-	(wire
-		(pts
 			(xy 166.37 127) (xy 165.1 125.73)
 		)
 		(stroke
@@ -7490,16 +7213,6 @@
 			(type default)
 		)
 		(uuid "bb224dd9-4691-49c8-8b8c-afaa3b3f9bf9")
-	)
-	(wire
-		(pts
-			(xy 90.17 52.07) (xy 90.17 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb4978cb-7b17-4530-8f3f-103aed8dba87")
 	)
 	(wire
 		(pts
@@ -7923,6 +7636,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 62.23) (xy 90.17 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eccfd2c8-a351-49c5-9f48-5d2749c8d95b")
+	)
+	(wire
+		(pts
 			(xy 171.45 168.91) (xy 170.18 167.64)
 		)
 		(stroke
@@ -7950,16 +7673,6 @@
 			(type default)
 		)
 		(uuid "f20b81bd-587b-4e2c-b031-18bfcdcdf191")
-	)
-	(wire
-		(pts
-			(xy 80.01 66.04) (xy 81.28 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f34c00f8-45d9-4ed6-9460-cf4a85262b0e")
 	)
 	(wire
 		(pts
@@ -10475,7 +10188,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 90.17 69.85 0)
+		(at 90.17 66.04 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -10486,7 +10199,7 @@
 		(dnp no)
 		(uuid "175fce95-4b0e-45a0-8c57-85a4a0978a9f")
 		(property "Reference" "#PWR0110"
-			(at 90.17 66.04 0)
+			(at 90.17 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10497,7 +10210,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 90.17 74.93 90)
+			(at 90.17 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10507,7 +10220,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 69.85 0)
+			(at 90.17 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10518,7 +10231,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 69.85 0)
+			(at 90.17 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10529,7 +10242,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 90.17 69.85 0)
+			(at 90.17 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11276,7 +10989,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:CAP-SMD_BD10.0-L10.3-W10.3-FD"
+		(property "Footprint" "easyeda2kicad:CAP-TH_BD10.0-P5.00-D0.6-FD"
 			(at 225.0948 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -11619,7 +11332,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 69.85 0)
+		(at 82.55 66.04 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -11630,7 +11343,7 @@
 		(dnp no)
 		(uuid "4dc3f06f-a45c-45cc-ac65-759099c039de")
 		(property "Reference" "#PWR0111"
-			(at 80.01 76.2 0)
+			(at 82.55 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11641,7 +11354,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 74.93 90)
+			(at 82.55 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11651,7 +11364,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 69.85 0)
+			(at 82.55 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11662,7 +11375,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 69.85 0)
+			(at 82.55 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11673,7 +11386,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 69.85 0)
+			(at 82.55 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14591,162 +14304,6 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:UT1A471M0607VG")
-		(at 85.09 59.69 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "99b51cc9-ea29-4739-8a54-de2367295e88")
-		(property "Reference" "C6"
-			(at 75.438 59.182 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "UT1A471M0607VG"
-			(at 77.978 59.182 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:CAP-SMD_BD6.3-L6.6-W6.6-FD"
-			(at 73.66 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-SMD_470uF-10V-20_C82004.html"
-			(at 71.12 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "470uF 10V ±20%"
-			(at 85.09 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Chengx(承兴)"
-			(at 68.58 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RVT1A471M0607"
-			(at 66.04 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 63.5 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 85.09 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 85.09 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 85.09 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part #" "C82004"
-			(at 85.09 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8333b2ae-669e-47c7-bb57-2f94dcf0e646")
-		)
-		(pin "2"
-			(uuid "b65f8c66-1fc3-4719-a7bb-90b1213f7498")
-		)
-		(instances
-			(project "pressure_sense"
-				(path "/4d2b72cb-2884-41ac-b4cd-fd7d01f84d28"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "easyeda2kicad:3362P-1-203_C118933")
 		(at 86.36 179.07 90)
 		(mirror x)
@@ -15333,7 +14890,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 85.09 66.04 90)
+		(at 86.36 62.23 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15343,7 +14900,7 @@
 		(dnp no)
 		(uuid "bb64178a-d944-4cc6-b4d1-f80856b68ac1")
 		(property "Reference" "C4"
-			(at 91.694 65.786 0)
+			(at 78.486 61.976 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15353,7 +14910,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 93.726 65.786 0)
+			(at 80.518 61.976 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15363,7 +14920,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:C0402"
-			(at 88.9 65.0748 0)
+			(at 90.17 61.2648 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15374,7 +14931,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 66.04 0)
+			(at 86.36 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15385,7 +14942,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 85.09 66.04 0)
+			(at 86.36 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15396,7 +14953,7 @@
 			)
 		)
 		(property "LCSC Part #" "C1525"
-			(at 85.09 66.04 0)
+			(at 86.36 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15407,7 +14964,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 85.09 66.04 0)
+			(at 86.36 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15418,7 +14975,7 @@
 			)
 		)
 		(property "Sim.Pins" ""
-			(at 85.09 66.04 0)
+			(at 86.36 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15429,7 +14986,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 85.09 66.04 0)
+			(at 86.36 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
