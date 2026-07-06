@@ -26,6 +26,15 @@ It has:
 - Broken-out devkit pins and 5V power supply for any peripherals you might like to add
   - e.g. [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder))
 
+## the future
+Definitely there can be improvements:
+short term:
+- no need 74HC163, devkit has plenty of GPIO!
+- logic level shifter instead of LED, there's already one on devkit
+
+long term:
+- implement an ESP32 S3 WROOM SOC module (no more clone devkit! Smaller and cheaper)
+
 ## hardware instructions
 
 - screenshots of kicad, pcb, full 3d model
@@ -34,7 +43,7 @@ It has:
 > This is my first PCB, so right now it's probably not optimised and has uneccesary components. It may cost more than neccesary to order, and it may not function properly.
 
 > [!WARNING]
-> **if regenerating production files from KICAD, the LCSC Part # in the BOM and component orientations in CPL may be incorrect.** I don't know how to fix it and had to directly edit BOM.csv :<
+> **if regenerating production files from KICAD, the LCSC Part # in the BOM and component orientations in CPL may be incorrect. Make sure to double check part numbers and orientation in JLCPCB before paying** I don't know how to fix it and had to directly edit BOM.csv :<
 
 > [!TIP]
 > lol these banners are so cool
