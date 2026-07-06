@@ -1,7 +1,55 @@
 # super_cat_game
-I wanted to build a chasing game for a cat, so it can stay healthy while having fun. The game could also be adapted for humans instead, if cats don't find it interesting. I really wanted to use some cool tech to detect when a cat catches its target.
 
-I built this for Fallout, a 2026 hardware hackathon for 13-18yos backed by Hack Club. There was a really fun and helpful community in this event, and Hack Club even funds your project! I would highly recommend hackathons like this if you're new/intermediate like I was (and still am :>)
+- zine first thing
+- how to use instructions
+- fully-assembled CAD and PCB 3D
+- (fix the LINK) BOM for whole project, pcb is one item? include the psu, led strip, velostat, conductive fabric tape...
+
+
+## backstory
+So basically my friend had a cat, and I was just getting into arduino electronics, so I wanted to make a chasing game for the both of them! I ended up deciding on a pressure-sensitive LED mat, for an interactive laser-pointer kind-of game, with wifi connectivity for convenience. It could be nice to use regularly to keep your pets fit, but really this is just a fun beginner project to me.
+
+Then, in between reels, I discovered Fallout, a 2026 hardware hackathon for 13-18yos backed by Hack Club. I was drawn in by the promise of full project funding and a free trip to Shenzhen, and was enthralled by the experienced and helpful community ready to help. I would highly recommend Hack Club hackathons like this if you're new/intermediate like me and within the age range :>
+
+The scope expanded when I realised that there's so much more potential with my setup! I used a powerful ESP32 S3 Devkit, so I broke out the pins for regular use! You can hook up any peripherals you want for your game! With a [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder), you could implement scheduled feeding and dispense treats as a diegetic reward! You can program anything, maybe even [Osu](https://osu.ppy.sh/), send it wirelessly to the mat, and interact by touch with the full spectrum of colours (even though the resolution leaves something to be desired lol)
+
+## tldr overview
+This project hardwires a pressure-sensitive LED mat to a powerful general-purpose devkit, intended for making arcade-style games (for a cat, if you'd like! :> )
+
+It has:
+- ~50*50cm play area
+  - Velostat pressure sensor matrix
+  - WS2812B LED matrix (very low resolution tho)
+- Wifi/Bluetooth capability (over-the-air coding for ez game dev!)
+  - Cheap but powerful Clone ESP32 S3 Devkit off [AliExpress](https://www.aliexpress.com/item/1005008790513258.html?spm=a2g0o.order_list.order_list_main.5.10771802dQlBSP#nav-description)
+- Broken-out devkit pins and 5V power supply for any peripherals you might like to add
+  - e.g. [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder))
+
+## hardware instructions
+
+- screenshots of kicad, pcb, full 3d model
+
+> [!CAUTION]
+> This is my first PCB, so right now it's probably not optimised and has uneccesary components. It may cost more than neccesary to order, and it may not function properly.
+
+> [!WARNING]
+> **if regenerating production files from KICAD, the LCSC Part # in the BOM and component orientations in CPL may be incorrect.** I don't know how to fix it and had to directly edit BOM.csv :<
+
+> [!TIP]
+> lol these banners are so cool
+
+I designed the circuit in KiCAD, and the full project is in the [kicad-project](kicad-project) folder.
+If you want to order the PCB, I've used components from JLCPCB and the production files are [here](kicad-project/production) ([gerbers](kicad-project/production/SuperCatGame_0.zip), [CPL](kicad-project/production/positions.csv)). I'd recommend at least hand-soldering the THT components, PCBA gets really expensive...)
+
+
+
+You'll need to buy stuff like the velostat, conductive tape, and LEDs as well. The specific items and recommended purchase sites (the ones I used) are [here]()
+
+## firmware instructions
+- set up the OTA stuff on uc
+
+## software instructions
+- how to use the example game?
 
 <img width="1081" height="628" alt="image" src="https://github.com/user-attachments/assets/d636669c-b6bd-40b9-a8e7-e3426bc417cf" />
 A 3D model of the pcb so far (V0)
@@ -9,4 +57,4 @@ looks so professional!! It's so overpriced tho :(
 
 The design I ended up with is a mat, running a feedback loop for an LED grid (WS2812B) and a pressure sensor matrix (velostat). The brains are an ESP32 S3 Devkit clone off of Aliexpress, programmable over the air (OTA) for easy game dev 👍
 
-After building, I realised that there's so much more potential with this setup! you could write any game you want, and represent it smartly with the endless colours (sorry the resolution is not very good)
+
