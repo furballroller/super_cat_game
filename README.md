@@ -1,5 +1,6 @@
 # super_cat_game
 
+- add more about online gaming
 - zine first thing
 - how to use instructions
 - fully-assembled CAD and PCB 3D
