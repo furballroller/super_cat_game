@@ -16,17 +16,40 @@ So basically my friend had a cat, and I was just getting into arduino electronic
 
 Then, in between reels, I discovered Fallout, a 2026 hardware hackathon for 13-18yos backed by Hack Club. I was drawn in by the promise of full project funding and a free trip to Shenzhen, and was enthralled by the experienced and helpful community ready to help. I would highly recommend Hack Club hackathons like this if you're new/intermediate like me and within the age range :>
 
-The scope expanded when I realised that there's so much more potential with my setup! I used a powerful ESP32 S3 Devkit, so I broke out the pins for regular use. You can hook up any peripherals you want for your game! Like, with a [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder), you could implement scheduled feeding and dispense treats as an in-game currency :> You can program anything, maybe even something like [Osu](https://osu.ppy.sh/), test it over-the-air, and instantly interact by touch with the full spectrum of colours! You might even want to host an online multiplayer game...
+The scope expanded when I realised that there's so much more potential with my setup! I used a powerful ESP32 S3 N16R8 Devkit, so I broke out the pins for prototyping. You can hook up any peripherals you want for your game! Like, with a [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder), you could implement scheduled feeding and dispense treats as an in-game currency :> You can program anything, maybe even something like [Osu](https://osu.ppy.sh/), and interact by touch with the full spectrum of colours! You might even want to host an online multiplayer game...
+
+
+
+
+
+++++++++++
+frame rate?
+++++++++++
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### overview (tldr)
 This project hardwires a pressure-sensitive LED mat to a powerful general-purpose devkit, intended for making arcade-style games (for a cat, if you'd like! :> )
 
 It has:
 - ~45*45cm play area
-  - Velostat pressure sensor matrix
-  - WS2812B LED matrix (very low resolution tho)
-- Wifi/Bluetooth capability (over-the-air coding for ez game dev!)
-  - Cheap but powerful Clone ESP32 S3 Devkit off [AliExpress](https://www.aliexpress.com/item/1005008790513258.html?spm=a2g0o.order_list.order_list_main.5.10771802dQlBSP#nav-description)
+ - Velostat pressure sensor matrix
+ - WS2812B LED matrix (very low resolution tho)
+- Wifi/Bluetooth capability
+ - Cheap ESP32 S3 Devkit clone off [AliExpress](https://www.aliexpress.com/item/1005008790513258.html?spm=a2g0o.order_list.order_list_main.5.10771802dQlBSP#nav-description)
+ - Remote control?
+ - Network multiplayer?
+ - Over-the-air coding for ez game dev?
 - Broken-out devkit pins and 5V power supply for any peripherals you might like to add
   - e.g. [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder))
 
