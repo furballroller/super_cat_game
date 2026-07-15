@@ -9661,7 +9661,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C725929"
+		(property "LCSC Part" ""
 			(at 176.53 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -9803,7 +9803,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C52917434"
+		(property "LCSC Part" "C474920"
 			(at 214.63 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -10430,7 +10430,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C474921"
+		(property "LCSC Part" "C7500786"
 			(at 162.56 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -10746,7 +10746,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C474921"
+		(property "LCSC Part" "C7500786"
 			(at 162.56 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -11572,7 +11572,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C474920"
+		(property "LCSC Part" "C474921"
 			(at 242.57 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -12202,7 +12202,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C338758"
+		(property "LCSC Part" "C118933"
 			(at 22.86 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -12496,7 +12496,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C7500786"
+		(property "LCSC Part" "C3406"
 			(at 132.08 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13622,7 +13622,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C1525"
+		(property "LCSC Part" "C98457"
 			(at 81.28 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13880,7 +13880,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C725929"
+		(property "LCSC Part" ""
 			(at 176.53 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -14021,7 +14021,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C1525"
+		(property "LCSC Part" "C98457"
 			(at 71.12 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -14299,7 +14299,7 @@
 				)
 			)
 		)
-		(property "LCSC Part" "C7500786"
+		(property "LCSC Part" "C3406"
 			(at 127 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -15127,6 +15127,159 @@
 			(project "pressure_sense"
 				(path "/4d2b72cb-2884-41ac-b4cd-fd7d01f84d28"
 					(reference "#PWR0128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 176.53 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb9042ab-db9d-44d7-9540-4ff0313d5b7e")
+		(property "Reference" "H4"
+			(at 179.07 74.9299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 179.07 77.4699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" ""
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" ""
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" ""
+			(at 176.53 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "pressure_sense"
+				(path "/4d2b72cb-2884-41ac-b4cd-fd7d01f84d28"
+					(reference "H4")
 					(unit 1)
 				)
 			)
