@@ -154,7 +154,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": true,
+          "td_ontrackend": false,
           "td_onvia": true
         }
       ],
@@ -729,7 +729,7 @@
         "uuid": "4d2b72cb-2884-41ac-b4cd-fd7d01f84d28"
       }
     ],
-    "used_designators": "#FLG3,#FLG5,UA3,#PWR81-82,#PWR95,#PWR120,U1,C8,R1-2,R5,H2-5,USBC2,P1,JR1-2,USB1,JL1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
