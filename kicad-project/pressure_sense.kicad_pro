@@ -521,9 +521,9 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "output/",
+      "plot": "production/",
       "specctra_dsn": "",
-      "vrml": ""
+      "vrml": "boardV1.wrl"
     },
     "page_layout_descr_file": ""
   },
