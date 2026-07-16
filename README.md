@@ -1,6 +1,6 @@
 # super_cat_game
 >Final product:
->- [3D-printed case on Onshape](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/47f68735415d642cd0337abf?renderMode=0&uiState=6a4c752463182663bd85f4b8)
+>- [3D-printed case on Onshape](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50)
 >- [KiCAD Project](kicad-project)
 >- Arduino Code
 
