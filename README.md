@@ -78,19 +78,24 @@ It has:
  - WS2812B LED matrix (very low resolution tho)
 - Wifi/Bluetooth capability
  - Cheap ESP32 S3 Devkit clone off [AliExpress](https://www.aliexpress.com/item/1005008790513258.html?spm=a2g0o.order_list.order_list_main.5.10771802dQlBSP#nav-description)
- - Remote control?
- - Network multiplayer?
- - Over-the-air coding for ez game dev?
 - Broken-out devkit pins and 5V power supply for any peripherals you might like to add
   - e.g. [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder))
 
+It could have:
+ - Gaming controller?
+ - Network multiplayer games?
+ - Over-the-air coding for ez game dev?
 
+
+
+<!--
 ## big_picture
+-->
 
 
 
 ## assembly
-<img width="720" height="721" alt="image" src="https://github.com/user-attachments/assets/02625bfc-674e-4e6e-94d2-2b4add3a4ae9" />  
+<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/02625bfc-674e-4e6e-94d2-2b4add3a4ae9" />  
 I thought it was cool to include the little thumb, and the vents are accurate too! They're like LHS/RHS prints from a cat grabbing the case or something :>
 Also, the USB port is on a 45 degree angle so the wire leaves perpendicular to the mat.
 
@@ -103,7 +108,7 @@ I'll touch on the key features of the design below. For more info, see the 3D mo
 I contained the circuit in a PCB attached to the corner of the mat, and I've also desgined a 3D-printed housing for it.
 
 #### PCB
-<img width="720" height="721" alt="PCB" src="https://github.com/user-attachments/assets/e44a234c-e4cd-436b-a006-abbbb84ec489" />  
+<img width="360" height="360" alt="PCB" src="https://github.com/user-attachments/assets/e44a234c-e4cd-436b-a006-abbbb84ec489" />  
 
 > [!CAUTION]
 > - Ignore the capacitor going off the edge, the EasyEDA model is wrong
@@ -113,25 +118,25 @@ I designed the PCB for hand-soldering, hence the abundance of THT and the large 
 My only concerns are the SSOP 74HC4067 and 6-pin USB-C port, but other than that the rest should be beginner friendly, from what I can gather. I would highly recommend looking for free makerspaces in your area for this! In Melbourne, Library at the Dock has one equipped with a digital microscope, flux/solder/wick, and  Hakko FX-888 soldering stations, all free of charge.
 
 #### housing
-<img width="3296" height="2547" alt="housing" src="https://github.com/user-attachments/assets/c8540786-b5d8-4412-b8d4-58c8dfad0934" />
+<img width="412" height="319" alt="housing" src="https://github.com/user-attachments/assets/c8540786-b5d8-4412-b8d4-58c8dfad0934" />
 
 I'm not very good at 3D CAD either, but this should work... I think  
 The design is quite self-explanatory, but below are some key features that I thought I should highlight:
 
-<img width="720" height="721" alt="bottom of base" src="https://github.com/user-attachments/assets/c6708018-b717-4e0e-a288-0dc7df241541" />  
+<img width="360" height="360" alt="bottom of base" src="https://github.com/user-attachments/assets/c6708018-b717-4e0e-a288-0dc7df241541" />  
 On the base, there is a cutout for those holes on the mat. The holes are truncated cones, inspired by [this video by BV3D](https://youtu.be/zaphoWIwSGI). 
 I designed my case to work with 3M screws, and the truncated cones means you can use machine screws or self-tapping (I think)
 
-<img width="720" height="721" alt="top of base" src="https://github.com/user-attachments/assets/bc8f3e00-2247-40b6-9aa1-018b0c52e8b4" />  
-<img width="720" height="721" alt="top of base, PCB overlaid" src="https://github.com/user-attachments/assets/37531324-df05-4bd8-b068-4380c774be07" />  
+<img width="360" height="360" alt="top of base" src="https://github.com/user-attachments/assets/bc8f3e00-2247-40b6-9aa1-018b0c52e8b4" />  
+<img width="360" height="360" alt="top of base, PCB overlaid" src="https://github.com/user-attachments/assets/37531324-df05-4bd8-b068-4380c774be07" />  
 The base supports the PCB with a few stilts through the holes in the PCB, again using M3 truncated cones. The smaller stilts give some support to the IDC connectors, which I expect may require some force to plug in and out.
 
-<img width="720" height="721" alt="top" src="https://github.com/user-attachments/assets/f3105c5a-5614-4d5b-8f91-1b39d023feea" />  
-<img width="720" height="721" alt="image" src="https://github.com/user-attachments/assets/4c3514b5-abc3-4234-9f71-46d3d9c08b4c" />  
+<img width="360" height="360" alt="top" src="https://github.com/user-attachments/assets/f3105c5a-5614-4d5b-8f91-1b39d023feea" />  
+<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/4c3514b5-abc3-4234-9f71-46d3d9c08b4c" />  
 The top fits on the bottom with M3 screws, and features holes for IDC, the LED strip, the USB-C power port, optional 5V power lines, and the broken-out GPIO from the devkit. Also there are (very stylish) vents :>
 
-<img width="720" height="721" alt="lid" src="https://github.com/user-attachments/assets/0b9b47c7-cb6f-4f81-b08d-1c5de6ffdb71" />  
-<img width="720" height="721" alt="image" src="https://github.com/user-attachments/assets/2e14f6f5-8676-4ff2-8766-b6f6b6c741d4" />  
+<img width="360" height="360" alt="lid" src="https://github.com/user-attachments/assets/0b9b47c7-cb6f-4f81-b08d-1c5de6ffdb71" />  
+<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/2e14f6f5-8676-4ff2-8766-b6f6b6c741d4" />  
 There's also a lid that slides onto the top, so the devkit is protected but can be accessed easily during game development. 
 I included a cool thinner section where the onboard LED is, so the status light should look like a cat's paw.
 
@@ -141,7 +146,7 @@ I included a cool thinner section where the onboard LED is, so the status light 
 > You'll see two holes in the top-right corner of the mat. These fit M3 screw heads, and should help anchor the PCB to the mat.
 
 1. The LED strips
-<img width="960" height="720" alt="LED strips assembled" src="https://github.com/user-attachments/assets/301c7ca1-797a-4f35-a080-5cb5b0335b92" />  
+<img width="480" height="360" alt="LED strips assembled" src="https://github.com/user-attachments/assets/301c7ca1-797a-4f35-a080-5cb5b0335b92" />  
 
 I used 13 LED long sections of 30 LED/m WS2812B individually addressable LEDs
 With pads on either side, each section is about 43.333mm long (theoretically)  
@@ -152,14 +157,14 @@ There are 13 of these sections, forming a 13*13 grid (169 LEDs)
 The ends can be soldered together with jumper wires, preferably with stranded wire, like so:
 
 <figure>
-	<img width="960" height="720" alt="Suggested wire arrangement" src="https://github.com/user-attachments/assets/6223ca25-1cf1-458b-b5ee-f00b0fbbbf31" />
-	<img width="960" height="720" alt="Suggested fold to connect to PCB" src="https://github.com/user-attachments/assets/2d9c9ec4-ff06-4c3d-bcb3-49640d34458e" />  
+	<img width="360" height="360" alt="Suggested LED strip interconnection" src="https://github.com/user-attachments/assets/93750281-5b07-4886-9c9a-9c0e8ca138e4" />
+	<img width="360" height="360" alt="Suggested fold to connect to PCB" src="https://github.com/user-attachments/assets/a732999c-8d8a-4d61-a87e-026df36bc777" />  
 	<figcaption>(don't crease too much tho!)</figcaption>
 </figure>
 
 
 2. The popsicle sticks  
-<img width="720" height="721" alt="Popsicle sticks assembled" src="https://github.com/user-attachments/assets/a3648ad5-4c80-44b2-b568-f299d7914e47" />  
+<img width="360" height="360" alt="Popsicle sticks assembled" src="https://github.com/user-attachments/assets/a3648ad5-4c80-44b2-b568-f299d7914e47" />  
 
 I used 2mm thick, 18mm wide popsicle sticks (jumbo craft sticks)  
 [My local option (Australia)](https://www.officeworks.com.au/shop/officeworks/p/kadink-jumbo-craft-sticks-natural-50-pack-showk0137)
@@ -173,13 +178,13 @@ They should be adhered to the LED strip with high-temperature hot glue or silico
 Please ensure hot glue doesn't get under the popsicle sticks, as this may affect the pressure detection and make the mat lumpy. 
 
 <figure>  
-	<img width="960" height="720" alt="Where to smush the glue" src="https://github.com/user-attachments/assets/5b506c56-6841-4907-afe1-7974d9a9486b" /> 
+	<img width="480" height="360" alt="Where to smush the glue" src="https://github.com/user-attachments/assets/5b506c56-6841-4907-afe1-7974d9a9486b" /> 
 	<figcaption>Try smushing the glue into the corner where the edge of the popsicle sticks meets the LED's flex-PCB</figcaption>
 </figure>
 
  
 3. Conductive fabric tape (bottom)  
-<img width="720" height="721" alt="Conductive fabric tape (bottom) assembled" src="https://github.com/user-attachments/assets/faad9d07-6b57-4aba-bd81-2c03844582fe" />
+<img width="360" height="360" alt="Conductive fabric tape (bottom) assembled" src="https://github.com/user-attachments/assets/faad9d07-6b57-4aba-bd81-2c03844582fe" />
 
 I used 0.1mm thick, 10mm wide conductive fabric tape. 
 This acts as the bottom layer of the velostat matrix.  
@@ -190,21 +195,21 @@ The tape sticks onto the wood to connect it together. If this isn't sturdy enoug
 
 An IDC wire needs to be attached to one end of each strip, so I recommend the following:
 
-<img width="720" height="721" alt="Leave a 1-2cm tape overhang" src="https://github.com/user-attachments/assets/37ac813d-01ac-4a59-839d-43e88d249c35" />  
+<img width="360" height="360" alt="Leave a 1-2cm tape overhang" src="https://github.com/user-attachments/assets/37ac813d-01ac-4a59-839d-43e88d249c35" />  
 Leave a 1-2cm tape overhang
 
-<img width="960" height="720" alt="Press the stripped IDC wire here" src="https://github.com/user-attachments/assets/6f7c7e34-28e7-4d6e-a111-2b3af42abdfc" />  
+<img width="480" height="360" alt="Press the stripped IDC wire here" src="https://github.com/user-attachments/assets/6f7c7e34-28e7-4d6e-a111-2b3af42abdfc" />  
 Peel the stripped IDC wire away from the rest and press it here. for extra security, you could wrap the tape around the entire row of IDC wires.
 
 
-<img width="960" height="720" alt="super cat game (6)" src="https://github.com/user-attachments/assets/cd4c3be9-5aa7-4fd8-b7be-c4857d9f542e" />  
+<img width="480" height="360" alt="super cat game (6)" src="https://github.com/user-attachments/assets/cd4c3be9-5aa7-4fd8-b7be-c4857d9f542e" />  
 Press another section of tape here, sticking the sticky sides together and securing the wire's insulation and popsicle stick together
 
-<img width="960" height="720" alt="super cat game (7)" src="https://github.com/user-attachments/assets/ccd98e8e-0387-4b15-813c-f922b456c592" />  
+<img width="480" height="360" alt="super cat game (7)" src="https://github.com/user-attachments/assets/ccd98e8e-0387-4b15-813c-f922b456c592" />  
 Wrap the main tape over the other strip and the wire (ensure it has contact with both the insulation and the bare metal, and press it into the crevices and flush to the bottom of the mat
 
 4. Velostat
-<img width="720" height="721" alt="Velostat assembled" src="https://github.com/user-attachments/assets/a48bf022-2008-4c28-90df-4b435305891e" />  
+<img width="360" height="360" alt="Velostat assembled" src="https://github.com/user-attachments/assets/a48bf022-2008-4c28-90df-4b435305891e" />  
 
 I used a 0.1mm thick, 280mm square sheet of velostat, cut up into ~18mm squares (this stuff is expensive!!)  
 [My local option (Australia)](https://www.pakronics.com.au/products/pressure-sensitive-conductive-sheet-velostat-linqstat-ada1361)
@@ -216,7 +221,7 @@ Kapton tape is necessary because it is also 0.1mm thick so that the velostat mai
 (**I'd recommend buying 1 "8mm" and splitting it in half lengthwise before applying**)
 
 5. Conductive fabric tape (top)
-<img width="720" height="721" alt="Conductive fabric tape (top) assembled" src="https://github.com/user-attachments/assets/69c3594c-6ca5-43d5-9739-251c7f744e02" />  
+<img width="360" height="360" alt="Conductive fabric tape (top) assembled" src="https://github.com/user-attachments/assets/69c3594c-6ca5-43d5-9739-251c7f744e02" />  
 
 This layer is sticky-side-up, so in real life you would stick it onto the top EVA first (see below). 
 Please make sure the tape is aligned such that it doesn't touch the bottom layer directly anywhere, only conducting through the Velostat squares.
@@ -224,7 +229,7 @@ Please make sure the tape is aligned such that it doesn't touch the bottom layer
 An IDC wire needs to be attached just like in the other layer, so I would recommend the same strategy, but wrapped upwards around the EVA. The ugly tape overhangs on top of the EVA will be covered, don't worry!
 
 6. Frosted plastic sheet (EVA)
-<img width="720" height="721" alt="image" src="https://github.com/user-attachments/assets/4cd52af2-93c7-49c0-bcf7-70226786162b" />  
+<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/4cd52af2-93c7-49c0-bcf7-70226786162b" />  
 
 I used a ~1mm thick, 450mm square of EVA plastic intended to line drawers.  
 [My local option (Australia)](https://www.rejectshop.com.au/p/drawer-and-shelf-liner-45x150cm)
