@@ -26,11 +26,10 @@ For more info, see the 3D model for this is in [my Onshape doc](https://cad.onsh
 Through the series of images, you'll see two holes in the top-right corner of the mat. These fit M3 screw heads, and should help anchor the PCB to the mat.
 
 1. The LED strips
-<img width="960" height="720" alt="LED strips assembled" src="https://github.com/user-attachments/assets/301c7ca1-797a-4f35-a080-5cb5b0335b92" />
+<img width="960" height="720" alt="LED strips assembled" src="https://github.com/user-attachments/assets/301c7ca1-797a-4f35-a080-5cb5b0335b92" />  
 
 I used 13 LED long sections of 30 LED/m WS2812B individually addressable LEDs
-With pads on either side, each section is about 43.333mm long (theoretically)
-
+With pads on either side, each section is about 43.333mm long (theoretically)  
 [Similar product on AliExpress](https://www.aliexpress.com/item/1005007989207832.html)
 (**MAKE SURE THE SPACING IS 30 LEDs/m; I'd recommend buying 2 "3m 30 IP30"**)
 
@@ -39,13 +38,13 @@ The ends can be soldered together with jumper wires, preferably with stranded wi
 
 <img width="960" height="720" alt="Suggested wire arrangement" src="https://github.com/user-attachments/assets/6223ca25-1cf1-458b-b5ee-f00b0fbbbf31" />
 
-<img width="960" height="720" alt="Suggested fold to connect to PCB" src="https://github.com/user-attachments/assets/2d9c9ec4-ff06-4c3d-bcb3-49640d34458e" />
+<img width="960" height="720" alt="Suggested fold to connect to PCB" src="https://github.com/user-attachments/assets/2d9c9ec4-ff06-4c3d-bcb3-49640d34458e" />  
 (don't crease too much tho!)
 
-2. The popsicle sticks
-<img width="720" height="721" alt="Popsicle sticks assembled" src="https://github.com/user-attachments/assets/a3648ad5-4c80-44b2-b568-f299d7914e47" />
+2. The popsicle sticks  
+<img width="720" height="721" alt="Popsicle sticks assembled" src="https://github.com/user-attachments/assets/a3648ad5-4c80-44b2-b568-f299d7914e47" />  
 
-I used 2mm thick, 18mm wide popsicle sticks (jumbo craft sticks)
+I used 2mm thick, 18mm wide popsicle sticks (jumbo craft sticks)  
 [My local option (Australia)](https://www.officeworks.com.au/shop/officeworks/p/kadink-jumbo-craft-sticks-natural-50-pack-showk0137)
 
 In the CAD, I made very long, 18mm-wide rectangles for simplicity. 
@@ -55,39 +54,62 @@ It may be useful to trim off the rounded ends for a fuller surface, but the spac
 They will be adhered together with the conductive tape that goes on top (see below). 
 They should be adhered to the LED strip with high-temperature hot glue or silicone (not being lazy! it's good for sticking to wood and flex-PCB, trust). 
 Please ensure hot glue doesn't get under the popsicle sticks, as this may affect the pressure detection and make the mat lumpy. 
-Try smushing the glue into the corner where the edge of the popsicle sticks meets the LED's flex-PCB
+Try smushing the glue into the corner where the edge of the popsicle sticks meets the LED's flex-PCB  
 <img width="960" height="720" alt="Where to smush the glue" src="https://github.com/user-attachments/assets/5b506c56-6841-4907-afe1-7974d9a9486b" />
  
-3. Conductive fabric tape (bottom)
+3. Conductive fabric tape (bottom)  
 <img width="720" height="721" alt="Conductive fabric tape (bottom) assembled" src="https://github.com/user-attachments/assets/faad9d07-6b57-4aba-bd81-2c03844582fe" />
 
 I used 0.1mm thick, 10mm wide conductive fabric tape. 
-This acts as the bottom layer of the velostat matrix.
-
-[Similar product on AliExpress](https://www.aliexpress.com/item/1005008406303623.html)
+This acts as the bottom layer of the velostat matrix.  
+[Similar product on AliExpress](https://www.aliexpress.com/item/1005008406303623.html)  
 (**I'd recommend buying 1 "10mm"**)
 
 The tape sticks onto the wood to connect it together. If this isn't sturdy enough, the sticks can keep their rounded ends, and hot glue can help hold them together (in the gap made by the rounded ends)
 
-4. Velostat
-<img width="720" height="721" alt="Velostat assembled" src="https://github.com/user-attachments/assets/a48bf022-2008-4c28-90df-4b435305891e" />
+An IDC wire needs to be attached to one end of each strip, so I recommend the following:
 
-I used a 0.1mm thick, 280mm square sheet of velostat, cut up into ~18mm squares (this stuff is expensive!!)
+<img width="720" height="721" alt="Leave a 1-2cm tape overhang" src="https://github.com/user-attachments/assets/37ac813d-01ac-4a59-839d-43e88d249c35" />  
+Leave a 1-2cm tape overhang
+
+<img width="960" height="720" alt="Press the stripped IDC wire here" src="https://github.com/user-attachments/assets/6f7c7e34-28e7-4d6e-a111-2b3af42abdfc" />  
+Peel the stripped IDC wire away from the rest and press it here. for extra security, you could wrap the tape around the entire row of IDC wires.
+
+
+<img width="960" height="720" alt="super cat game (6)" src="https://github.com/user-attachments/assets/cd4c3be9-5aa7-4fd8-b7be-c4857d9f542e" />  
+Press another section of tape here, sticking the sticky sides together and securing the wire's insulation and popsicle stick together
+
+<img width="960" height="720" alt="super cat game (7)" src="https://github.com/user-attachments/assets/ccd98e8e-0387-4b15-813c-f922b456c592" />  
+Wrap the main tape over the other strip and the wire (ensure it has contact with both the insulation and the bare metal, and press it into the crevices and flush to the bottom of the mat
+
+4. Velostat
+<img width="720" height="721" alt="Velostat assembled" src="https://github.com/user-attachments/assets/a48bf022-2008-4c28-90df-4b435305891e" />  
+
+I used a 0.1mm thick, 280mm square sheet of velostat, cut up into ~18mm squares (this stuff is expensive!!)  
 [My local option (Australia)](https://www.pakronics.com.au/products/pressure-sensitive-conductive-sheet-velostat-linqstat-ada1361)
 
 The squares will be adhered to the popsicles with double-sided kapton tape, on both sides of the conductive fabric tape (bottom).
 Kapton tape is necessary because it is also 0.1mm thick so that the velostat maintains electrical contact.
 
-[Kapton tape on AliExpress](https://www.aliexpress.com/item/4000389589500.html)
+[Kapton tape on AliExpress](https://www.aliexpress.com/item/4000389589500.html)  
 (**I'd recommend buying 1 "8mm" and splitting it in half lengthwise before applying**)
 
 5. Conductive fabric tape (top)
-<img width="720" height="721" alt="Conductive fabric tape (top) assembled" src="https://github.com/user-attachments/assets/69c3594c-6ca5-43d5-9739-251c7f744e02" />
+<img width="720" height="721" alt="Conductive fabric tape (top) assembled" src="https://github.com/user-attachments/assets/69c3594c-6ca5-43d5-9739-251c7f744e02" />  
 
-sticky side up
+This layer is sticky-side-up, so in real life you would stick it onto the top EVA first (see below). 
+Please make sure the tape is aligned such that it doesn't touch the bottom layer directly anywhere, only conducting through the Velostat squares.
 
+An IDC wire needs to be attached just like in the other layer, so I would recommend the same strategy, but wrapped upwards around the EVA. If you don't like the look of the overhang on the top EVA, you can use another strip of tape to wrap around the bottom, but the security of the tape may be compromised (easier to peel away)
 
 6. Frosted plastic sheet (EVA)
+<img width="720" height="721" alt="image" src="https://github.com/user-attachments/assets/4cd52af2-93c7-49c0-bcf7-70226786162b" />  
+
+I used a ~1mm thick, 450mm square of EVA plastic intended to line drawers.  
+[My local option (Australia)](https://www.rejectshop.com.au/p/drawer-and-shelf-liner-45x150cm)
+
+The top layer of conductive tape should be stuck to the bottom of this sheet, on the smooth side. 
+This layer can be adhered to the construction beneath it with 
 
 ### The PCB
 
@@ -136,9 +158,7 @@ for each frame:
 	output to LED display
 ```
 
-The game logic is up to the user, but I made a template in Arduino that handles interactions with the hardware.
-
-I also bundled OTA flashing for convenience...
+Programming a game is up to the user, but I made a few simple programs and a template for your own game. The template handles interactions with the hardware! Here's how to use it ...
 
 
 
