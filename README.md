@@ -242,6 +242,7 @@ This EVA layer can be adhered to the bottom construction with electrical tape, n
 ## the_future
 Some ideas I have:
 - using an ESP32 S3 WROOM SOC module (no more clone devkit! Smaller and cheaper)
+- using something like NeoPixelBus instead of FastLED to make the Arduino code faster/efficient
 
 Lemme know if you've got any suggestions!
 
