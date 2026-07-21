@@ -11,7 +11,7 @@
 _Final product:_
 - [_3D-printed case on Onshape_](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50)
 - [_KiCAD Project_](kicad-project)
-- _Arduino Code_
+- [_Arduino Sketches_](arduino_sketches) (PlatformIO IDE)
 
 
 <!--
