@@ -90,6 +90,13 @@ It could have:
 
 <!--
 ## big_picture
+the mat should roll up
+
+## code
+I used Arduino, through the PlatformIO IDE (VS Code), to program the devkit. 
+[Template sketch and example programs in this repository](arduino_sketches)
+
+I used [FastLED](https://github.com/fastled/fastled) to control the WS2812B neopixels
 -->
 
 
@@ -100,7 +107,9 @@ I thought it was cool to include the little thumb, and the vents are accurate to
 Also, the USB port is on a 45 degree angle so the wire leaves perpendicular to the mat.
 
 I'll touch on the key features of the design below. For more info, see the 3D model for this is in [my Onshape doc](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50), under the tab "boxV1" 
-(my bad for the bad organisation, I'm still learning CAD)
+(my bad for the bad organisation, I'm still learning CAD)  
+
+If you want to change the tolerances (they're untested), I haven't tried, sorry if something is inaccurate. It may be best to change the tolerances in your slicer.
 > [!TIP]
 > the Onshape link might not work. I had to click it, then **Ctrl+X Ctrl+V Enter** from the address bar
 
@@ -115,7 +124,7 @@ I contained the circuit in a PCB attached to the corner of the mat, and I've als
 > - The two parallel rows of vertical pin headers (for the devkit) should be female, again the EasyEDA model is wrong
 
 I designed the PCB for hand-soldering, hence the abundance of THT and the large 0805 capacitors/resistors.
-My only concerns are the SSOP 74HC4067 and 6-pin USB-C port, but other than that the rest should be beginner friendly, from what I can gather. I would highly recommend looking for free makerspaces in your area for this! In Melbourne, Library at the Dock has one equipped with a digital microscope, flux/solder/wick, and  Hakko FX-888 soldering stations, all free of charge.
+My only concerns are the SSOP 74HC4067 and 6-pin USB-C port, but other than that the rest should be beginner friendly, from what I can gather. I would highly recommend looking for free makerspaces in your area for this! In Melbourne, Library at the Dock has one equipped with a digital microscope, flux/solder/wick, and  Hakko FX-888 soldering stations, all free of charge. Maybe be careful around ESD, I'll update whether it's ok when I go to soldering.
 
 #### housing
 <img width="412" height="319" alt="housing" src="https://github.com/user-attachments/assets/c8540786-b5d8-4412-b8d4-58c8dfad0934" />
@@ -226,7 +235,7 @@ Kapton tape is necessary because it is also 0.1mm thick so that the velostat mai
 This layer is sticky-side-up, so in real life you would stick it onto the top EVA first (see below). 
 Please make sure the tape is aligned such that it doesn't touch the bottom layer directly anywhere, only conducting through the Velostat squares.
 
-An IDC wire needs to be attached just like in the other layer, so I would recommend the same strategy, but wrapped upwards around the EVA. The ugly tape overhangs on top of the EVA will be covered, don't worry!
+An IDC wire needs to be attached just like in the other layer, so I would recommend the same strategy, but wrapped upwards around the EVA. The ugly tape overhangs on top of the EVA will be covered by electrical tape later.
 
 6. Frosted plastic sheet (EVA)
 <img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/4cd52af2-93c7-49c0-bcf7-70226786162b" />  
@@ -235,7 +244,7 @@ I used a ~1mm thick, 450mm square of EVA plastic intended to line drawers.
 [My local option (Australia)](https://www.rejectshop.com.au/p/drawer-and-shelf-liner-45x150cm)
 
 The top layer of conductive tape should be stuck to the bottom of this sheet, on the smooth side. 
-This EVA layer can be adhered to the bottom construction with electrical tape, not just because it's easy, but because it's soft and flexible. It would be really useful if the mat could roll up for easy transport, and the edges should be soft to avoid injury when rushing to slap the board in gameplay :)
+This EVA layer can be adhered to the bottom construction with electrical tape, not just because it's easy to design, but because of it's suitable properties. The mat is designed to loosely roll up for easy transport/storage, requiring flexibility, and the edges must be soft to keep flying fingers/paws safe around the mat :)
 
 
 
@@ -243,6 +252,7 @@ This EVA layer can be adhered to the bottom construction with electrical tape, n
 Some ideas I have:
 - using an ESP32 S3 WROOM SOC module (no more clone devkit! Smaller and cheaper)
 - using something like NeoPixelBus instead of FastLED to make the Arduino code faster/efficient
+- a way to attach/detatch IDC without needing to unscrew the lid (for portability/storage)
 
 Lemme know if you've got any suggestions!
 
