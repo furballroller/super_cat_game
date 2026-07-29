@@ -15,7 +15,7 @@
 // the pot on the PCB is a more robust adjustment? Voltage divider basically reads Rvelostat/Rtotal so lower (anticlockwise?) increases sensitivity
 
 
-//// FUNCTIONS ////
+//// CAT GAME FUNCTIONS ////
 
 // return true if the dot is caught
 bool Caught(float x, float y, int Pressure_m[VELOSTAT_WIDTH][VELOSTAT_WIDTH]) {
@@ -99,7 +99,7 @@ void(* Reset) (void) = 0;
 
 //// MAIN CODE ////
 
-//// variables ////
+//// hardware variables ////
 // LEDs
 CRGB LEDs[NUM_LEDS];  // Linear array representing LED strip
 CRGB* LED_m[LED_WIDTH][LED_WIDTH];  // LED matrix (will be reorganised from ^ linear array)
@@ -108,6 +108,7 @@ CRGB* LED_m[LED_WIDTH][LED_WIDTH];  // LED matrix (will be reorganised from ^ li
 int Pressure_m[VELOSTAT_WIDTH][VELOSTAT_WIDTH];  // array of arrays storing pressure readings for the board
 // Pressure_m[y][x] for the pressure reading at (x,y)
 
+//// cat game variables ////
 // position in proportion_of_screen
 float x;  // (0-1, where 0 is far left and 1 is far right)
 float y;  // (0-1, where 0 is far top and 1 is far bottom)
@@ -123,7 +124,6 @@ float ay;
 // jerk in proportion_of_screen/loop_time^3
 float jx;
 float jy;
-
 
 void setup() {
   // put your setup code here, to run once:
@@ -145,13 +145,11 @@ void setup() {
   
 }
 
-
 void loop() {
-  Read_pressure_all(Pressure_m);  // read pressure at the start of every loop
-
-
   // put your main code here, to run repeatedly:
   // "*(LED_m[Y][X]) = CRGB:: " to set CRGB of LEDs
+
+  Read_pressure_all(Pressure_m);  // read pressure at the start of every loop
 
   if (Caught(x, y, Pressure_m)) {
     // blink dot 5 times
