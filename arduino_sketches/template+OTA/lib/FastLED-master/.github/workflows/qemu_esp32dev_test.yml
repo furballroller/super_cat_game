@@ -1,0 +1,28 @@
+name: ESP32-DEV QEMU Test
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - 'src/**/*.cpp'
+      - 'src/**/*.h'
+      - 'examples/**/*.ino'
+      - 'examples/**/*.cpp'
+      - 'examples/**/*.h'
+      - 'platformio.ini'
+      - 'CMakeLists.txt'
+      - 'library.json'
+      - '.github/workflows/qemu_esp32dev_test.yml'
+      - '.github/workflows/qemu_docker_template.yml'
+jobs:
+  esp32dev_qemu_test:
+    uses: ./.github/workflows/qemu_docker_template.yml
+    with:
+      platform: esp32dev
+      platform_display: ESP32-DEV
+      sketch: BlinkParallel
