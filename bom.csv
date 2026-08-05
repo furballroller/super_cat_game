@@ -1,0 +1,15 @@
+Name,Description,Link,Cost (USD)
+5x PCB,Cost of 5 boards from JLCPCB,,5.20
+5x PCB components,Cost of components for 5 boards from LCSC,,24.72
+ESP32 S3 devkit,ESP32 S3 N16R8 devkit,https://www.aliexpress.com/item/1005008790513258.html,7.25
+Solder,15g lead-free solder 0.71mm,https://www.jaycar.com.au/1-0mm-15g-lead-free-solder-hobby-tube/p/NS3092,4.23
+9x 6mm M3 screws,Approximately 0.10 USD each,,0.90
+3D printer filament,"71g per housing of PLA, approximately 0.02 USD/g",,1.42
+Neopixel LEDs,"2x 3m sections of 30 LED/m strip, total 180 LEDs",https://www.aliexpress.com/item/1005007989207832.html,11.86
+Popsicle sticks,50 Jumbo Craft Sticks,https://www.officeworks.com.au/shop/officeworks/p/kadink-jumbo-craft-sticks-natural-50-pack-showk0137,2.12
+Conductive tape,10m roll of 8mm conductive fabric tape,https://www.aliexpress.com/item/1005007568611729.html,3.81
+Velostat sheet,28x28cm sheet of velostat,https://www.pakronics.com.au/products/pressure-sensitive-conductive-sheet-velostat-linqstat-ada1361,8.28
+Double sided tape,50m roll of 5mm double-sided PET tape,https://www.aliexpress.com/item/1005012157309588.html,4.25
+Frosted plastic sheet,45*150cm EVA plastic sheet intended to line drawers,https://www.rejectshop.com.au/p/drawer-and-shelf-liner-45x150cm,3.00
+Estimated shipping,Generous estimate of JLCPCB and LCSC combined,,15.00
+,,,92.04

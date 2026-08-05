@@ -1,4 +1,5 @@
 # super_cat_game
+
 > [!CAUTION]
 > This is my first PCB, so right now it's probably not very good. It may be cost-inefficient and buggy.
 
@@ -9,10 +10,10 @@
 > these banners are so cool lol
 
 _Final product:_
+
 - [_3D-printed case on Onshape_](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50)
 - [_KiCAD Project_](kicad-project)
 - [_Arduino Sketches_](arduino_sketches) (PlatformIO IDE)
-
 
 <!--
 - zine first thing
@@ -20,24 +21,14 @@ _Final product:_
 - fully-assembled CAD and PCB 3D
 - (fix the LINK) BOM for whole project, pcb is one item? include the psu, led strip, velostat, conductive fabric tape...
 
-
-
-
-
 It might look complex, but it's really simple:
 - the two counter ICs (74HC163) count from 0 to 255, incrementing every time the devkit sends a pulse
 - the binary output of the 74HC163s is fed into the MUX ICs (74HC4067), which changes the channel accordingly
-
 
 You'll need to buy stuff like the velostat, conductive tape, and LEDs as well. The specific items and recommended purchase sites (the ones I used) are [here]()
 
 ## firmware instructions
 - set up the OTA stuff on uc
-
-
-
-
-
 
 ## system
 The game should work like:
@@ -52,61 +43,86 @@ for each frame:
 
 Programming a game is up to the user, but I made a few simple programs and a template for your own game. The template handles interactions with the hardware! Here's how to use it ...
 
-
 -->
 
-
-
-
-
-
-
 ## backstory
+
 So basically my friend had a cat, and I was just getting into arduino electronics, so I wanted to make a chasing game for the both of them! I ended up deciding on a pressure-sensitive LED mat, for an interactive laser-pointer kind-of game, with wifi connectivity for convenience. It could be nice to use regularly to keep your pets fit, but really this is just a fun beginner project to me.
 
 Then, in between reels, I discovered Fallout, a 2026 hardware hackathon for 13-18yos backed by Hack Club. I was drawn in by the promise of full project funding and a free trip to Shenzhen, and was enthralled by the experienced and helpful community ready to help. I would highly recommend Hack Club hackathons like this if you're new/intermediate like me and within the age range :>
 
 The scope expanded when I realised that there's so much more potential with my setup! I used a powerful ESP32 S3 N16R8 Devkit, so I broke out the pins for prototyping. You can hook up any peripherals you want for your game! Like, with a [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder), you could implement scheduled feeding and dispense treats as an in-game currency :> You can program anything, maybe even something like [Osu](https://osu.ppy.sh/), and interact by touch with the full spectrum of colours! You might even want to host an online multiplayer game...
 
+## the_overview
 
-### overview (tldr)
-This project hardwires a pressure-sensitive LED mat to a powerful general-purpose devkit, intended for making arcade-style games (for a cat, if you'd like! :> )
+This project hardwires a pressure-sensitive LED mat to a powerful general-purpose devkit, intended for making inuitive arcade-style games (for a cat, if you'd like! :> )
 
-It has:
+I used Arduino to code up a simple cat game ([Arduino sketch](arduino_sketches/cat_game)), where a laser dot darts around, avoids people, and resets the game when caught.
+
+The devkit opens the project to endless posibilities, including bluetooth game controllers, network games, and over-the-air coding for easy game dev ([template Arduino sketch with ArduinoOTA](arduino_sketches/template+OTA))
+
+### specs
+
 - ~45*45cm play area
- - Velostat pressure sensor matrix
- - WS2812B LED matrix (very low resolution tho)
+  - 14*14 Velostat pressure sensor matrix
+  - 13*13 WS2812B LED matrix (very low resolution tho)
 - Wifi/Bluetooth capability
- - Cheap ESP32 S3 Devkit clone off [AliExpress](https://www.aliexpress.com/item/1005008790513258.html?spm=a2g0o.order_list.order_list_main.5.10771802dQlBSP#nav-description)
+  - Cheap ESP32 S3 N16R8 Devkit clone off [AliExpress](https://www.aliexpress.com/item/1005008790513258.html)
 - Broken-out devkit pins and 5V power supply for any peripherals you might like to add
-  - e.g. [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder))
+  - e.g. [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder)
 
-It could have:
- - Gaming controller?
- - Network multiplayer games?
- - Over-the-air coding for ez game dev?
+### cost
 
+[Overall BOM.csv](bom.csv) | [PCB BOM.csv](kicad_project/production/bom.csv)
+
+The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. It comes out to 84.79 USD
+
+It's about XXX USD per unit:
+
+|Cost (USD)|Stuff                  |
+|----------|-----------------------|
+|29.92+DEVKIT)/5     |electronics|
+|   | Housing  |
+|   |Mat|
+
+I didn't include tools like soldering stuff and a 3D printer, but I did approximate the cost of consumables like solder, tape rolls, screws and filament.
 
 
 <!--
 ## big_picture
 the mat should roll up
 
-## code
-I used Arduino, through the PlatformIO IDE (VS Code), to program the devkit. 
-[Template sketch and example programs in this repository](arduino_sketches)
-
-I used [FastLED](https://github.com/fastled/fastled) to control the WS2812B neopixels
 -->
 
+## the_system
 
+<!-- a flowchart -->
 
-## assembly
-<img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/02625bfc-674e-4e6e-94d2-2b4add3a4ae9" />  
+### the_code
+
+[My example sketches:](arduino_sketches) (currently untested)
+
+- [press_light](arduino_sketches/press_light): intended to be a test of function, that should simply light up LEDs around where you press. This would be great for making sure the hardware is behaving, or as a fun starting point if you want to experiment with code and get the hang of Arduino.
+- [cat_game](arduino_sketches/cat_game): a simple cat game where the computer controls a red laser-pointer-like dot to avoid people.
+- [template](arduino_sketches/template): an empty template for your project! I set up some useful functions in functions.cpp and put all the initialisation code in for you.
+- [template+OTA](arduino_sketches/template+OTA): same as [template](arduino_sketches/template), but I also set up [ArduinoOTA](https://github.com/JAndrassy/ArduinoOTA). I think it's really cool that you can upload code wirelesly like magic! ([a cool tutorial page](https://www.programmingelectronics.com/arduinoota/))
+
+I used PlatformIO on Visual Studio Code to write my Arduino programs for the microcontroller. This may sound convoluted, but I did it this way because Arduino programs are easy to write (compared to industrial languages) but Arduino IDE is horrible!
+
+If you want to use Arduino IDE, you can quite easily copy-paste my code into the IDE. For a given project folder in [arduino_sketches](arduino_sketches), you just kinda paste the stuff from functions.cpp first, then the stuff from main.cpp... it may take a bit of fiddling around though, so I would recommend looking into PlatformIO (after getting used to it, I find it way way better :>)
+
+I used [FastLED](https://github.com/fastled/fastled) to control the WS2812B neopixels
+
+## the_assembly
+
+![assembly image](https://github.com/user-attachments/assets/02625bfc-674e-4e6e-94d2-2b4add3a4ae9)
+
+<!-- <img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/02625bfc-674e-4e6e-94d2-2b4add3a4ae9" />   -->
+
 I thought it was cool to include the little thumb, and the vents are accurate too! They're like LHS/RHS prints from a cat grabbing the case or something :>
 Also, the USB port is on a 45 degree angle so the wire leaves perpendicular to the mat.
 
-I'll touch on the key features of the design below. For more info, see the 3D model for this is in [my Onshape doc](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50), under the tab "boxV1" 
+I'll touch on the key features of the design below. For more info, see the 3D model for this is in [my Onshape doc](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50), under the tab "boxV1"
 (my bad for the bad organisation, I'm still learning CAD)  
 
 If you want to change the tolerances (they're untested), I haven't tried, sorry if something is inaccurate. It may be best to change the tolerances in your slicer.
@@ -114,43 +130,62 @@ If you want to change the tolerances (they're untested), I haven't tried, sorry 
 > the Onshape link might not work. I had to click it, then **Ctrl+X Ctrl+V Enter** from the address bar
 
 ### the_brains
+
 I contained the circuit in a PCB attached to the corner of the mat, and I've also desgined a 3D-printed housing for it.
 
+The whole project runs off an ESP32 S3 N16R8 microcontroller devkit, which is like an Arduino but better (in my opinion)
+
+[On Aliexpress](https://www.aliexpress.com/item/1005008790513258.html)
+(**I would recommend getting "S3 KIT" because the screw terminals are very handy, but I put the board by itself into the BOM**)
+
+When choosing a microcontroller, I noticed that a lot of clone (knockoff) ESP32 S3 devkits, including the one I bought, have the antenna port but also an antenna built into the PCB. I think they give you the option to change to an external antenna by doing a bit of soldering, but by default it is connected to the onboard antenna.
+
 #### PCB
-<img width="360" height="360" alt="PCB" src="https://github.com/user-attachments/assets/e44a234c-e4cd-436b-a006-abbbb84ec489" />  
+
+![PCB](https://github.com/user-attachments/assets/e44a234c-e4cd-436b-a006-abbbb84ec489)
+<!-- <img width="360" height="360" alt="PCB" src="" />   -->
 
 > [!CAUTION]
+>
 > - Ignore the capacitor going off the edge, the EasyEDA model is wrong
 > - The two parallel rows of vertical pin headers (for the devkit) should be female, again the EasyEDA model is wrong
 
 I designed the PCB for hand-soldering, hence the abundance of THT and the large 0805 capacitors/resistors.
+
 My only concerns are the SSOP 74HC4067 and 6-pin USB-C port, but other than that the rest should be beginner friendly, from what I can gather. I would highly recommend looking for free makerspaces in your area for this! In Melbourne, Library at the Dock has one equipped with a digital microscope, flux/solder/wick, and  Hakko FX-888 soldering stations, all free of charge. Maybe be careful around ESD, I'll update whether it's ok when I go to soldering.
 
-#### housing
-<img width="412" height="319" alt="housing" src="https://github.com/user-attachments/assets/c8540786-b5d8-4412-b8d4-58c8dfad0934" />
+#### the_housing
+
+![housing](https://github.com/user-attachments/assets/c8540786-b5d8-4412-b8d4-58c8dfad0934)
+<!-- <img width="412" height="319" alt="housing" src="https://github.com/user-attachments/assets/c8540786-b5d8-4412-b8d4-58c8dfad0934" /> -->
 
 I'm not very good at 3D CAD either, but this should work... I think  
 The design is quite self-explanatory, but below are some key features that I thought I should highlight:
 
 <img width="360" height="360" alt="bottom of base" src="https://github.com/user-attachments/assets/c6708018-b717-4e0e-a288-0dc7df241541" />  
+
 On the base, there is a cutout for those holes on the mat. The holes are truncated cones, inspired by [this video by BV3D](https://youtu.be/zaphoWIwSGI). 
 I designed my case to work with 3M screws, and the truncated cones means you can use machine screws or self-tapping (I think)
 
 <img width="360" height="360" alt="top of base" src="https://github.com/user-attachments/assets/bc8f3e00-2247-40b6-9aa1-018b0c52e8b4" />  
 <img width="360" height="360" alt="top of base, PCB overlaid" src="https://github.com/user-attachments/assets/37531324-df05-4bd8-b068-4380c774be07" />  
+
 The base supports the PCB with a few stilts through the holes in the PCB, again using M3 truncated cones. The smaller stilts give some support to the IDC connectors, which I expect may require some force to plug in and out.
 
 <img width="360" height="360" alt="top" src="https://github.com/user-attachments/assets/f3105c5a-5614-4d5b-8f91-1b39d023feea" />  
 <img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/4c3514b5-abc3-4234-9f71-46d3d9c08b4c" />  
+
 The top fits on the bottom with M3 screws, and features holes for IDC, the LED strip, the USB-C power port, optional 5V power lines, and the broken-out GPIO from the devkit. Also there are (very stylish) vents :>
 
 <img width="360" height="360" alt="lid" src="https://github.com/user-attachments/assets/0b9b47c7-cb6f-4f81-b08d-1c5de6ffdb71" />  
 <img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/2e14f6f5-8676-4ff2-8766-b6f6b6c741d4" />  
+
 There's also a lid that slides onto the top, so the devkit is protected but can be accessed easily during game development. 
 I included a cool thinner section where the onboard LED is, so the status light should look like a cat's paw.
 
 
 ### the_mat
+
 > [!TIP]
 > You'll see two holes in the top-right corner of the mat. These fit M3 screw heads, and should help anchor the PCB to the mat.
 
@@ -195,10 +230,9 @@ Please ensure hot glue doesn't get under the popsicle sticks, as this may affect
 3. Conductive fabric tape (bottom)  
 <img width="360" height="360" alt="Conductive fabric tape (bottom) assembled" src="https://github.com/user-attachments/assets/faad9d07-6b57-4aba-bd81-2c03844582fe" />
 
-I used 0.1mm thick, 10mm wide conductive fabric tape. 
-This acts as the bottom layer of the velostat matrix.  
-[Similar product on AliExpress](https://www.aliexpress.com/item/1005008406303623.html)  
-(**I'd recommend buying 1 "10mm"**)
+I used 0.1mm thick, 8mm wide conductive fabric tape. This acts as the bottom layer of the velostat matrix.  
+[Similar product on AliExpress](https://www.aliexpress.com/item/1005007568611729.html)  
+(**I'd recommend buying 1 "8mm"**)
 
 The tape sticks onto the wood to connect it together. If this isn't sturdy enough, the sticks can keep their rounded ends, and hot glue can help hold them together (in the gap made by the rounded ends)
 
@@ -223,17 +257,18 @@ Wrap the main tape over the other strip and the wire (ensure it has contact with
 I used a 0.1mm thick, 280mm square sheet of velostat, cut up into ~18mm squares (this stuff is expensive!!)  
 [My local option (Australia)](https://www.pakronics.com.au/products/pressure-sensitive-conductive-sheet-velostat-linqstat-ada1361)
 
-The squares will be adhered to the popsicles with double-sided kapton tape, on both sides of the conductive fabric tape (bottom).
-Kapton tape is necessary because it is also 0.1mm thick so that the velostat maintains electrical contact.
+The squares will be adhered to the popsicles with thin-film double-sided tape, with two 4mm wide sections flanking the conductive tape running down the middle of the popsicles.
 
-[Similar product on AliExpress](https://www.aliexpress.com/item/4000389589500.html)  
-(**I'd recommend buying 1 "8mm" and splitting it in half lengthwise before applying**)
+It is important that the tape is as thin or thinner than the velostat (≤0.1mm), or it may squish instead of the velostat, lowering the sensitivity, and so resolution, of pressure readings.
+
+[Double-sided tape on AliExpress](https://www.aliexpress.com/item/1005012157309588.html)  
+(**I'd recommend buying 1 "5mm"**)
 
 5. Conductive fabric tape (top)
+
 <img width="360" height="360" alt="Conductive fabric tape (top) assembled" src="https://github.com/user-attachments/assets/69c3594c-6ca5-43d5-9739-251c7f744e02" />  
 
-This layer is sticky-side-up, so in real life you would stick it onto the top EVA first (see below). 
-Please make sure the tape is aligned such that it doesn't touch the bottom layer directly anywhere, only conducting through the Velostat squares.
+This layer is sticky-side-up, so in real life you would stick it onto the top EVA first (see below). Please make sure the tape is aligned such that it doesn't touch the bottom layer directly anywhere, only conducting through the Velostat squares.
 
 An IDC wire needs to be attached just like in the other layer, so I would recommend the same strategy, but wrapped upwards around the EVA. The ugly tape overhangs on top of the EVA will be covered by electrical tape later.
 
@@ -243,23 +278,30 @@ An IDC wire needs to be attached just like in the other layer, so I would recomm
 I used a ~1mm thick, 450mm square of EVA plastic intended to line drawers.  
 [My local option (Australia)](https://www.rejectshop.com.au/p/drawer-and-shelf-liner-45x150cm)
 
-The top layer of conductive tape should be stuck to the bottom of this sheet, on the smooth side. 
-This EVA layer can be adhered to the bottom construction with electrical tape, not just because it's easy to design, but because of it's suitable properties. The mat is designed to loosely roll up for easy transport/storage, requiring flexibility, and the edges must be soft to keep flying fingers/paws safe around the mat :)
-
-
+The top layer of conductive tape should be stuck to the bottom of this sheet, on the smooth side. This EVA layer can be adhered to the bottom construction with electrical tape, not just because it's easy to design, but because of it's suitable properties. The mat is designed to loosely roll up for easy transport/storage, requiring flexibility, and the edges must be soft to keep flying fingers/paws safe around the mat :)
 
 ## the_future
+
 Some ideas I have:
-- using an ESP32 S3 WROOM SOC module (no more clone devkit! Smaller and cheaper)
+
+- multiplexing/charlieplexing/shift registers instead of expensive neopixels
+- using an ESP32 S3 WROOM SOC module (no more clone devkit! Smaller and cheaper PCB)
 - using something like NeoPixelBus instead of FastLED to make the Arduino code faster/efficient
 - a way to attach/detatch IDC without needing to unscrew the lid (for portability/storage)
 
 Lemme know if you've got any suggestions!
-
-
+My email: [aydeny8k@gmail.com](mailto:aydeny8k@gmail.com)
 
 ## references
+
 The Velostat pressure matrix idea: [Youtube video by MarcoReps](https://www.youtube.com/watch?v=0uPZwMg5B3k)
+
 Truncated-cone screw holes idea: [Youtube video by BV3D](https://youtu.be/zaphoWIwSGI)
 
+[FastLED](https://github.com/fastled/fastled) Arduino library
 
+[ArduinoOTA](https://github.com/JAndrassy/ArduinoOTA) Arduino library
+
+[easyeda2kicad.py](https://github.com/uPesy/easyeda2kicad.py) Python script
+
+Pictures annotated in Google Drawings
