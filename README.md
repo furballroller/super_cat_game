@@ -45,6 +45,8 @@ Programming a game is up to the user, but I made a few simple programs and a tem
 
 -->
 
+<img width="1748" height="2480" alt="A5 - 1 (1)" src="https://github.com/user-attachments/assets/2de8649b-de12-4aaa-9155-4af353fd5fe8" />
+
 ## backstory
 
 So basically my friend had a cat, and I was just getting into arduino electronics, so I wanted to make a chasing game for the both of them! I ended up deciding on a pressure-sensitive LED mat, for an interactive laser-pointer kind-of game, with wifi connectivity for convenience. It could be nice to use regularly to keep your pets fit, but really this is just a fun beginner project to me.
