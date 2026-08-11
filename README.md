@@ -55,7 +55,7 @@ Then, in between reels, I discovered Fallout, a 2026 hardware hackathon for 13-1
 
 The scope expanded when I realised that there's so much more potential with my setup! I used a powerful ESP32 S3 N16R8 Devkit, so I broke out the pins for prototyping. You can hook up any peripherals you want for your game! Like, with a [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder), you could implement scheduled feeding and dispense treats as an in-game currency :> You can program anything, maybe even something like [Osu](https://osu.ppy.sh/), and interact by touch with the full spectrum of colours! You might even want to host an online multiplayer game...
 
-## the_overview
+## overview
 
 This project hardwires a pressure-sensitive LED mat to a powerful general-purpose devkit, intended for making inuitive arcade-style games (for a cat, if you'd like! :> )
 
@@ -100,7 +100,7 @@ the mat should roll up
 
 <!-- a flowchart -->
 
-### the_code
+### code
 
 [My example sketches:](arduino_sketches) (currently untested)
 
@@ -115,7 +115,7 @@ If you want to use Arduino IDE, you can quite easily copy-paste my code into the
 
 I used [FastLED](https://github.com/fastled/fastled) to control the WS2812B neopixels
 
-## the_assembly
+### assembly
 
 ![assembly image](https://github.com/user-attachments/assets/02625bfc-674e-4e6e-94d2-2b4add3a4ae9)
 
@@ -131,7 +131,7 @@ If you want to change the tolerances (they're untested), I haven't tried, sorry 
 > [!TIP]
 > the Onshape link might not work. I had to click it, then **Ctrl+X Ctrl+V Enter** from the address bar
 
-### the_brains
+### electronics
 
 I contained the circuit in a PCB attached to the corner of the mat, and I've also desgined a 3D-printed housing for it.
 
@@ -156,7 +156,7 @@ I designed the PCB for hand-soldering, hence the abundance of THT and the large 
 
 My only concerns are the SSOP 74HC4067 and 6-pin USB-C port, but other than that the rest should be beginner friendly, from what I can gather. I would highly recommend looking for free makerspaces in your area for this! In Melbourne, Library at the Dock has one equipped with a digital microscope, flux/solder/wick, and  Hakko FX-888 soldering stations, all free of charge. Maybe be careful around ESD, I'll update whether it's ok when I go to soldering.
 
-#### the_housing
+#### housing
 
 ![housing](https://github.com/user-attachments/assets/c8540786-b5d8-4412-b8d4-58c8dfad0934)
 <!-- <img width="412" height="319" alt="housing" src="https://github.com/user-attachments/assets/c8540786-b5d8-4412-b8d4-58c8dfad0934" /> -->
@@ -186,7 +186,7 @@ There's also a lid that slides onto the top, so the devkit is protected but can 
 I included a cool thinner section where the onboard LED is, so the status light should look like a cat's paw.
 
 
-### the_mat
+### sensor_mat
 
 > [!TIP]
 > You'll see two holes in the top-right corner of the mat. These fit M3 screw heads, and should help anchor the PCB to the mat.
@@ -299,6 +299,8 @@ My email: [aydeny8k@gmail.com](mailto:aydeny8k@gmail.com)
 The Velostat pressure matrix idea: [Youtube video by MarcoReps](https://www.youtube.com/watch?v=0uPZwMg5B3k)
 
 Truncated-cone screw holes idea: [Youtube video by BV3D](https://youtu.be/zaphoWIwSGI)
+
+Sliding lid shape: [Wuodan0 on Thingiverse](https://www.thingiverse.com/thing:5201077)
 
 [FastLED](https://github.com/fastled/fastled) Arduino library
 
