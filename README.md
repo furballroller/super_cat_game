@@ -77,7 +77,7 @@ The devkit opens the project to endless posibilities, including bluetooth game c
 
 [Overall BOM.csv](bom.csv) | [PCB BOM.csv](kicad_project/production/bom.csv)
 
-The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. This comes out to 96.73 USD.
+The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. Though, I did include a laptop charger and the LED strips that I already have. This comes out to 111.83 USD.
 
 I didn't include tools (not consumed) like soldering equipment and a 3D printer, but I did approximate the cost of consumables like solder, tape rolls, screws and filament.
 
@@ -85,6 +85,7 @@ I didn't include tools (not consumed) like soldering equipment and a 3D printer,
 
 |Cost (USD)|Stuff|
 |--|--|
+|14.11|Power supply|
 |22.15|Electronics|
 |2.32|Housing|
 |33.32|Mat|
@@ -104,7 +105,9 @@ the mat should roll up
 <!-- a flowchart -->
 <img width="715" height="770" alt="image" src="https://github.com/user-attachments/assets/d144fde1-c4fd-4c2a-886b-7ac50897572b" />
 
-Everything is quite self-explanatory except for the Velostat pressure sensor matrix, so I'll try my best to explain. There's a good video of it by [MarcoReps on YouTube](https://www.youtube.com/watch?v=0uPZwMg5B3k).
+I decided to use a USBC PD laptop charger as the PSU since it's quite common and versatile and it's not too expensive.
+
+The rest of the system is quite self-explanatory except for the Velostat pressure sensor matrix, so I'll try my best to explain. There's a good video of it by [MarcoReps on YouTube](https://www.youtube.com/watch?v=0uPZwMg5B3k).
 
 #### Velostat pressure sensor matrix
 
