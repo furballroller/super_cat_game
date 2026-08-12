@@ -130,7 +130,7 @@ Another way to show the same circuit:
 
 The matrix in the mat is 14 conductive lines crossed with 14 perpendicular lines, making a total of 14^2=196 "sensors." It's the same as the line of sensors, but there are multiple lines of sensors, with one ground connection each. The ground connections are controlled by another multiplexer, only allowing one line to be active at once.
 
-<img width="773" height="572" alt="image" src="https://github.com/user-attachments/assets/e898d5c7-c897-47fd-9e47-bb87de756906" />
+<img width="1042" height="773" alt="image" src="https://github.com/user-attachments/assets/6f0cf098-df57-4ca6-be74-134b2d49d7ea" />
 
 This is a 4 by 4 example. Multiplexer 1 picks the line of sensors connected to GND, and multiplexer 2 picks the sensor from that line to read.
 
