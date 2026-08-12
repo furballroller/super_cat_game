@@ -15,36 +15,6 @@ _Final product:_
 - [_KiCAD Project_](kicad-project)
 - [_Arduino Sketches_](arduino_sketches) (PlatformIO IDE)
 
-<!--
-- zine first thing
-- how to use instructions
-- fully-assembled CAD and PCB 3D
-- (fix the LINK) BOM for whole project, pcb is one item? include the psu, led strip, velostat, conductive fabric tape...
-
-It might look complex, but it's really simple:
-- the two counter ICs (74HC163) count from 0 to 255, incrementing every time the devkit sends a pulse
-- the binary output of the 74HC163s is fed into the MUX ICs (74HC4067), which changes the channel accordingly
-
-You'll need to buy stuff like the velostat, conductive tape, and LEDs as well. The specific items and recommended purchase sites (the ones I used) are [here]()
-
-## firmware instructions
-- set up the OTA stuff on uc
-
-## system
-The game should work like:
-```
-for each frame:
-	read the pressure sensor matrix
-
-	do game logic accordingly
-
-	output to LED display
-```
-
-Programming a game is up to the user, but I made a few simple programs and a template for your own game. The template handles interactions with the hardware! Here's how to use it ...
-
--->
-
 <img width="1748" height="2480" alt="A5 - 1 (1)" src="https://github.com/user-attachments/assets/2de8649b-de12-4aaa-9155-4af353fd5fe8" />
 
 ## backstory
@@ -53,15 +23,17 @@ So basically my friend had a cat, and I was just getting into arduino electronic
 
 Then, in between reels, I discovered Fallout, a 2026 hardware hackathon for 13-18yos backed by Hack Club. I was drawn in by the promise of full project funding and a free trip to Shenzhen, and was enthralled by the experienced and helpful community ready to help. I would highly recommend Hack Club hackathons like this if you're new/intermediate like me and within the age range :>
 
-The scope expanded when I realised that there's so much more potential with my setup! I used a powerful ESP32 S3 N16R8 Devkit, so I broke out the pins for prototyping. You can hook up any peripherals you want for your game! Like, with a [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder), you could implement scheduled feeding and dispense treats as an in-game currency :> You can program anything, maybe even something like [Osu](https://osu.ppy.sh/), and interact by touch with the full spectrum of colours! You might even want to host an online multiplayer game...
+The scope expanded when I realised that there's so much more potential with my setup! I used a powerful ESP32 S3 N16R8 Devkit, so I broke out the pins for prototyping. You can hook up any peripherals you want for your game! Like, with a [3D printed kibble dispenser](https://electronoobs.com/tutorial/3d-printed-arduino-cat-feeder), you could implement scheduled feeding and dispense treats as an in-game currency :>
+
+But you can program anything, not just for a cat! Chess online/locally would be easy and super fun! Maybe even something like [Osu](https://osu.ppy.sh/), make use of the full spectrum of colours! You might even want to host an online multiplayer game...
 
 ## overview
 
 This project hardwires a pressure-sensitive LED mat to a powerful general-purpose devkit, intended for making inuitive arcade-style games (for a cat, if you'd like! :> )
 
-I used Arduino to code up a simple cat game ([Arduino sketch](arduino_sketches/cat_game)), where a laser dot darts around, avoids people, and resets the game when caught.
+I used Arduino to code up a simple cat game ([Arduino sketch](arduino_sketches/cat_game)), where a laser dot darts around, avoids people, and resets the game when caught. To use this, just upload the code to the devkit (using it's built-in USB-C port), plug it into the PCB, then plug the PCB into the wall!
 
-The devkit opens the project to endless posibilities, including bluetooth game controllers, network games, and over-the-air coding for easy game dev ([template Arduino sketch with ArduinoOTA](arduino_sketches/template+OTA))
+The devkit opens the project to endless posibilities, including bluetooth game controllers, network games, and over-the-air coding for easy game dev ([template Arduino sketch with ArduinoOTA](arduino_sketches/template+OTA)). This project is meant to function as a very cool extension of the microcontroller, for those who might want to jump straight into making games using this touch interface.
 
 ### specs
 
@@ -195,9 +167,18 @@ When choosing a microcontroller, I noticed that a lot of clone (knockoff) ESP32 
 > - Ignore the capacitor going off the edge, the EasyEDA model is wrong
 > - The two parallel rows of vertical pin headers (for the devkit) should be female, again the EasyEDA model is wrong
 
-I designed the PCB for hand-soldering, hence the abundance of THT and the large 0805 capacitors/resistors.
+About the design:
 
-My only concerns are the SSOP 74HC4067 and 6-pin USB-C port, but other than that the rest should be beginner friendly, from what I can gather. I would highly recommend looking for free makerspaces in your area for this! In Melbourne, Library at the Dock has one equipped with a digital microscope, flux/solder/wick, and  Hakko FX-888 soldering stations, all free of charge. Maybe be careful around ESD, I'll update whether it's ok when I go to soldering.
+- JL1 and JR1 hold the ESP32 devkit
+- The USB-C is for power only
+- JLED1 is for the LED strip
+- JPWR1 is 5V power for any peripherals you might want to add
+- The IDC sockets are for the pressure-sensing data lines
+- The fancy ICs are just CD74HC4067 multiplexers for selecting the pressure-sensing channel to read
+- The potentiometer is for adjusting the sensitivity of the pressure sensing (it's part of a voltage divider)
+- U1 is a logic level converter for the LEDs.
+
+Regarding soldering: I designed the PCB to be hand-soldered, hence the abundance of THT and the large 0805 capacitors/resistors. My only concerns are the SSOP 74HC4067 and 6-pin USB-C port, but other than that the rest should be beginner friendly, from what I can gather. I'm thinking of going to my local makerspace to solder this. In Melbourne, Library at the Dock has one equipped with a digital microscope, flux/solder/wick, and  Hakko FX-888 soldering stations, all free of charge. Maybe be careful around ESD, I'll update on my degree of success when I build it.
 
 #### housing
 
