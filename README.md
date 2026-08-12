@@ -98,8 +98,6 @@ the mat should roll up
 
 -->
 
-## the_system
-
 ### hardware
 
 <!-- a flowchart -->
@@ -160,7 +158,7 @@ If you want to use Arduino IDE, you can quite easily copy-paste my code into the
 
 I used [FastLED](https://github.com/fastled/fastled) to control the WS2812B neopixels
 
-### assembly
+## assembly
 
 ![assembly image](https://github.com/user-attachments/assets/02625bfc-674e-4e6e-94d2-2b4add3a4ae9)
 
