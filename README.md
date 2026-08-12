@@ -90,7 +90,7 @@ I didn't include tools (not consumed) like soldering equipment and a 3D printer,
 |2.32|Housing|
 |33.32|Mat|
 
-Excluding shipping, it's about 57.79 USD per unit.
+Excluding shipping, it's about 71.90 USD per unit.
 
 <!--
 ## big_picture
