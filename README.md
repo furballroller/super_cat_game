@@ -107,9 +107,11 @@ the mat should roll up
 
 I decided to use a USBC PD laptop charger as the PSU since it's quite common and versatile and it's not too expensive.
 
-The rest of the system is quite self-explanatory except for the Velostat pressure sensor matrix, so I'll try my best to explain. There's a good video of it by [MarcoReps on YouTube](https://www.youtube.com/watch?v=0uPZwMg5B3k).
+The velostat matrix is connected with two 45cm lengths of 16-way IDC cables (not shown in CAD). One individual line will be cut, stripped, and stuck to the sensor lines at regular intervals along the mat, 14 horizontally and 14 vertically. There's more detail [here]()
 
 #### Velostat pressure sensor matrix
+
+The rest of the system is quite self-explanatory except for the Velostat pressure sensor matrix, so I'll try my best to explain. There's a good video of it by [MarcoReps on YouTube](https://www.youtube.com/watch?v=0uPZwMg5B3k).
 
 Velostat is a thin plastic sheet with electrical resistance that decreases as it is pressed or deformed.
 
