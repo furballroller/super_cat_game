@@ -104,15 +104,37 @@ the mat should roll up
 <!-- a flowchart -->
 <img width="715" height="770" alt="image" src="https://github.com/user-attachments/assets/d144fde1-c4fd-4c2a-886b-7ac50897572b" />
 
-Everything is quite self-explanatory except for the Velostat pressure sensor matrix, so I'll try my best to explain. There's a good video of it by MarcoReps on YouTube.
+Everything is quite self-explanatory except for the Velostat pressure sensor matrix, so I'll try my best to explain. There's a good video of it by [MarcoReps on YouTube](https://www.youtube.com/watch?v=0uPZwMg5B3k).
 
 #### Velostat pressure sensor matrix
 
-Velostat is a thin plastic sheet with electrical resistance that decreases as it is pressed or deformed. Each "sensor" works by sandwiching a square of Velostat between perpendicular strips of conductive fabric tape, such that it acts as a resistor between them. When the Velostat is compressed, the resistance between the two strips decreases. Connecting one tape to 3.3V through a normal resistor (e.g. 10k Ohms) and the other to GND, the circuit becomes a voltage divider between the Velostat and the normal resistor. The microcontroller can read the voltage at this point (relative to GND) to figure out the resistance of the Velostat, which tells you approximately how much pressure is on it!
+Velostat is a thin plastic sheet with electrical resistance that decreases as it is pressed or deformed.
 
-Along one long conductive strip, multiple perpendicular strips can be laid across with Velostat between, creating a line of sensors. By connecting all the perpendicular lines to a multiplexer, they are all left in a high-impedance state except one. The normal resistor and can be connected on the output of the multiplexer, and 
+Each "sensor" works by sandwiching a square of Velostat between perpendicular strips of conductive fabric tape, such that it acts as a resistor between them.
 
-works using two 16 channel multiplexers (CD74HC4067): the ESP32 specifies a channel, the multiplexers switch to the corresponding Velostat sensor, then the ESP32 takes a reading.
+<img width="597" height="460" alt="velostat sensor" src="https://github.com/user-attachments/assets/32694cdd-1730-411f-80f8-207c9374ec48" />
+
+When the Velostat is compressed, the resistance between the two strips decreases. Connecting one tape to 3.3V through a normal resistor (e.g. 10k Ohms) and the other to GND, the circuit becomes a voltage divider between the Velostat and the normal resistor. The microcontroller can read the voltage at this point (relative to GND) to figure out the resistance of the Velostat, which tells you approximately how much pressure is on it!
+
+<img width="382" height="465" alt="circuit" src="https://github.com/user-attachments/assets/b8ebd086-3dc4-4730-9d96-48d32fe3a2a2" />
+
+Along one long conductive strip, multiple perpendicular strips can be laid across with Velostat between, creating a line of sensors. By connecting all the perpendicular lines to a multiplexer's channels, they are all left in a high-impedance state except the selected channel. The normal resistor and ADC pin can be connected on the single output of the multiplexer, so they can be reused when the channel is switched.
+
+Conventional diagram
+
+<img width="382" height="368" alt="image" src="https://github.com/user-attachments/assets/4c1e4bd7-a76c-40c4-af19-d9529678c5d4" />
+
+Another way to show the same circuit:
+
+<img width="535" height="594" alt="image" src="https://github.com/user-attachments/assets/b98a0acc-5e34-499d-83b5-e710a59f568c" />
+
+The matrix in the mat is 14 conductive lines crossed with 14 perpendicular lines, making a total of 14^2=196 "sensors." It's the same as the line of sensors, but there are multiple lines of sensors, with one ground connection each. The ground connections are controlled by another multiplexer, only allowing one line to be active at once.
+
+<img width="773" height="572" alt="image" src="https://github.com/user-attachments/assets/e898d5c7-c897-47fd-9e47-bb87de756906" />
+
+This is a 4 by 4 example. Multiplexer 1 picks the line of sensors connected to GND, and multiplexer 2 picks the sensor from that line to read.
+
+The real mat works using two 16 channel multiplexers (CD74HC4067) on the PCB: the ESP32 specifies a channel, the multiplexers switch to the corresponding Velostat sensor, then the ESP32 takes a reading through it's ADC pin. Instead of the normal resistor, there is a potentiometer (variable resistor) that allows you to adjust sensitivity.
 
 ### code
 
