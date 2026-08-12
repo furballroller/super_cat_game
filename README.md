@@ -77,9 +77,9 @@ The devkit opens the project to endless posibilities, including bluetooth game c
 
 [Overall BOM.csv](bom.csv) | [PCB BOM.csv](kicad_project/production/bom.csv)
 
-The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. This comes out to 96.73 USD.
+The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. With shipping, this comes out to 97.72 USD.
 
-I didn't include tools (not consumed) like soldering equipment and a 3D printer, but I did approximate the cost of consumables like solder, tape rolls, screws and filament.
+I didn't include tools (not consumed) like soldering equipment and a 3D printer, but I did approximate the cost of the consumables used like solder, tape rolls, screws and filament. I also included extra tape and wire and such for redundancy.
 
 #### Per unit
 
@@ -87,9 +87,9 @@ I didn't include tools (not consumed) like soldering equipment and a 3D printer,
 |--|--|
 |22.15|Electronics|
 |2.32|Housing|
-|33.32|Mat|
+|34.31|Mat|
 
-Excluding shipping, it's about 57.79 USD per unit.
+Excluding shipping, it's about 58.78 USD per unit.
 
 <!--
 ## big_picture
