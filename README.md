@@ -136,6 +136,10 @@ This is a 4 by 4 example. Multiplexer 1 picks the line of sensors connected to G
 
 The real mat works using two 16 channel multiplexers (CD74HC4067) on the PCB: the ESP32 specifies a channel, the multiplexers switch to the corresponding Velostat sensor, then the ESP32 takes a reading through it's ADC pin. Instead of the normal resistor, there is a potentiometer (variable resistor) that allows you to adjust sensitivity.
 
+<img width="1002" height="733" alt="image" src="https://github.com/user-attachments/assets/27092ed9-db3d-4566-8acc-c02c8fecde97" />
+
+This is how the sensors are tiled
+
 ### code
 
 [My example sketches:](arduino_sketches) (currently untested)
