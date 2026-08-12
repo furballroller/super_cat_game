@@ -11,7 +11,7 @@
 
 _Final product:_
 
-- [_3D-printed case on Onshape_](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50)
+- [_3D-printed case on Onshape_](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50) (proper assembly instructions below)
 - [_KiCAD Project_](kicad-project)
 - [_Arduino Sketches_](arduino_sketches) (PlatformIO IDE)
 
@@ -77,18 +77,19 @@ The devkit opens the project to endless posibilities, including bluetooth game c
 
 [Overall BOM.csv](bom.csv) | [PCB BOM.csv](kicad_project/production/bom.csv)
 
-The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. It comes out to 84.79 USD
+The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. This comes out to 96.73 USD.
 
-It's about XXX USD per unit:
+I didn't include tools (not consumed) like soldering equipment and a 3D printer, but I did approximate the cost of consumables like solder, tape rolls, screws and filament.
 
-|Cost (USD)|Stuff                  |
-|----------|-----------------------|
-|29.92+DEVKIT)/5     |electronics|
-|   | Housing  |
-|   |Mat|
+#### Per unit
 
-I didn't include tools like soldering stuff and a 3D printer, but I did approximate the cost of consumables like solder, tape rolls, screws and filament.
+|Cost (USD)|Stuff|
+|--|--|
+|22.15|Electronics|
+|2.32|Housing|
+|33.32|Mat|
 
+Excluding shipping, it's about 57.79 USD per unit.
 
 <!--
 ## big_picture
@@ -208,8 +209,8 @@ The ends can be soldered together with jumper wires, preferably with stranded wi
 	<figcaption>(don't crease too much tho!)</figcaption>
 </figure>
 
-
 2. The popsicle sticks  
+
 <img width="360" height="360" alt="Popsicle sticks assembled" src="https://github.com/user-attachments/assets/a3648ad5-4c80-44b2-b568-f299d7914e47" />  
 
 I used 2mm thick, 18mm wide popsicle sticks (jumbo craft sticks)  
@@ -230,6 +231,7 @@ Please ensure hot glue doesn't get under the popsicle sticks, as this may affect
 
  
 3. Conductive fabric tape (bottom)  
+
 <img width="360" height="360" alt="Conductive fabric tape (bottom) assembled" src="https://github.com/user-attachments/assets/faad9d07-6b57-4aba-bd81-2c03844582fe" />
 
 I used 0.1mm thick, 8mm wide conductive fabric tape. This acts as the bottom layer of the velostat matrix.  
@@ -241,19 +243,24 @@ The tape sticks onto the wood to connect it together. If this isn't sturdy enoug
 An IDC wire needs to be attached to one end of each strip, so I recommend the following:
 
 <img width="360" height="360" alt="Leave a 1-2cm tape overhang" src="https://github.com/user-attachments/assets/37ac813d-01ac-4a59-839d-43e88d249c35" />  
+
 Leave a 1-2cm tape overhang
 
 <img width="480" height="360" alt="Press the stripped IDC wire here" src="https://github.com/user-attachments/assets/6f7c7e34-28e7-4d6e-a111-2b3af42abdfc" />  
+
 Peel the stripped IDC wire away from the rest and press it here. for extra security, you could wrap the tape around the entire row of IDC wires.
 
 
 <img width="480" height="360" alt="super cat game (6)" src="https://github.com/user-attachments/assets/cd4c3be9-5aa7-4fd8-b7be-c4857d9f542e" />  
+
 Press another section of tape here, sticking the sticky sides together and securing the wire's insulation and popsicle stick together
 
 <img width="480" height="360" alt="super cat game (7)" src="https://github.com/user-attachments/assets/ccd98e8e-0387-4b15-813c-f922b456c592" />  
+
 Wrap the main tape over the other strip and the wire (ensure it has contact with both the insulation and the bare metal, and press it into the crevices and flush to the bottom of the mat
 
 4. Velostat
+
 <img width="360" height="360" alt="Velostat assembled" src="https://github.com/user-attachments/assets/a48bf022-2008-4c28-90df-4b435305891e" />  
 
 I used a 0.1mm thick, 280mm square sheet of velostat, cut up into ~18mm squares (this stuff is expensive!!)  
@@ -275,6 +282,7 @@ This layer is sticky-side-up, so in real life you would stick it onto the top EV
 An IDC wire needs to be attached just like in the other layer, so I would recommend the same strategy, but wrapped upwards around the EVA. The ugly tape overhangs on top of the EVA will be covered by electrical tape later.
 
 6. Frosted plastic sheet (EVA)
+
 <img width="360" height="360" alt="image" src="https://github.com/user-attachments/assets/4cd52af2-93c7-49c0-bcf7-70226786162b" />  
 
 I used a ~1mm thick, 450mm square of EVA plastic intended to line drawers.  
