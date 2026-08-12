@@ -77,9 +77,9 @@ The devkit opens the project to endless posibilities, including bluetooth game c
 
 [Overall BOM.csv](bom.csv) | [PCB BOM.csv](kicad_project/production/bom.csv)
 
-The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. With shipping, this comes out to 97.72 USD.
+The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. This comes out to 96.73 USD.
 
-I didn't include tools (not consumed) like soldering equipment and a 3D printer, but I did approximate the cost of the consumables used like solder, tape rolls, screws and filament. I also included extra tape and wire and such for redundancy.
+I didn't include tools (not consumed) like soldering equipment and a 3D printer, but I did approximate the cost of consumables like solder, tape rolls, screws and filament.
 
 #### Per unit
 
@@ -87,9 +87,9 @@ I didn't include tools (not consumed) like soldering equipment and a 3D printer,
 |--|--|
 |22.15|Electronics|
 |2.32|Housing|
-|34.31|Mat|
+|33.32|Mat|
 
-Excluding shipping, it's about 58.78 USD per unit.
+Excluding shipping, it's about 57.79 USD per unit.
 
 <!--
 ## big_picture
@@ -99,7 +99,20 @@ the mat should roll up
 
 ## the_system
 
+### hardware
+
 <!-- a flowchart -->
+<img width="715" height="770" alt="image" src="https://github.com/user-attachments/assets/d144fde1-c4fd-4c2a-886b-7ac50897572b" />
+
+Everything is quite self-explanatory except for the Velostat pressure sensor matrix, so I'll try my best to explain. There's a good video of it by MarcoReps on YouTube.
+
+#### Velostat pressure sensor matrix
+
+Velostat is a thin plastic sheet with electrical resistance that decreases as it is pressed or deformed. Each "sensor" works by sandwiching a square of Velostat between perpendicular strips of conductive fabric tape, such that it acts as a resistor between them. When the Velostat is compressed, the resistance between the two strips decreases. Connecting one tape to 3.3V through a normal resistor (e.g. 10k Ohms) and the other to GND, the circuit becomes a voltage divider between the Velostat and the normal resistor. The microcontroller can read the voltage at this point (relative to GND) to figure out the resistance of the Velostat, which tells you approximately how much pressure is on it!
+
+Along one long conductive strip, multiple perpendicular strips can be laid across with Velostat between, creating a line of sensors. By connecting all the perpendicular lines to a multiplexer, they are all left in a high-impedance state except one. The normal resistor and can be connected on the output of the multiplexer, and 
+
+works using two 16 channel multiplexers (CD74HC4067): the ESP32 specifies a channel, the multiplexers switch to the corresponding Velostat sensor, then the ESP32 takes a reading.
 
 ### code
 
