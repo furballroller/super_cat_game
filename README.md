@@ -17,6 +17,8 @@ _Final product:_
 
 <img width="1748" height="2480" alt="A5 - 1 (1)" src="https://github.com/user-attachments/assets/2de8649b-de12-4aaa-9155-4af353fd5fe8" />
 
+Cat silhouette traced from this photo: ID <a href="https://www.dreamstime.com/cat-mid-air-jump-white-coloured-patches-jumping-down-against-yellow-wall-image115652480">115652480</a> @ <a href="https://www.dreamstime.com/lazaroctavian_info">Octavian Mihai Lazar</a> | <a href="https://www.dreamstime.com/">Dreamstime.com</a>
+
 ## backstory
 
 So basically my friend had a cat, and I was just getting into arduino electronics, so I wanted to make a chasing game for the both of them! I ended up deciding on a pressure-sensitive LED mat, for an interactive laser-pointer kind-of game, with wifi connectivity for convenience. It could be nice to use regularly to keep your pets fit, but really this is just a fun beginner project to me.
