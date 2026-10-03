@@ -321,7 +321,12 @@ The top layer of conductive tape should be stuck to the bottom of this sheet, on
 
 ## the_past
 
-Just a quick note about the [kicad_V0](kicad_V0) and [kicad_V1](kicad_V1), I just uploaded V0 so you can see a previous design I made. I cobbled it together from backups so maybe double check whether it works if you plan to build it. 
+![V0](https://github.com/user-attachments/assets/acc3bd9c-9e46-4560-87b4-9d616e033b72)
+
+> [!CAUTION]
+> I cobbled V0 together from backups so maybe double check whether it works if you plan to build it. e.g. there's no copper exclusion around the antenna :<
+
+Just a quick note about the [kicad_V0](kicad_V0) and [kicad_V1](kicad_V1), I just uploaded V0 so you can see a previous design I made. I wanted to preserve more ESP32 GPIO pins, so I used counter ICs to cycle through the binary selection, using one clock pin for each counter instead of 4 pins to specify channel on the MUXs. I removed the counters to save board space and money, seeing that there are so many available GPIO anyway lol :>
 
 ## the_future
 
