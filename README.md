@@ -12,7 +12,7 @@
 _Final product:_
 
 - [_3D-printed case on Onshape_](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50) (proper assembly instructions below)
-- [_KiCAD Project_](kicad-project)
+- [_KiCAD Project_](kicad_V1)
 - [_Arduino Sketches_](arduino_sketches) (PlatformIO IDE)
 
 <img width="1748" height="2480" alt="A5 - 1 (1)" src="https://github.com/user-attachments/assets/2de8649b-de12-4aaa-9155-4af353fd5fe8" />
@@ -49,7 +49,7 @@ The devkit opens the project to endless posibilities, including bluetooth game c
 
 ### cost
 
-[Overall BOM.csv](bom.csv) | [PCB BOM.csv](kicad_project/production/bom.csv)
+[Overall BOM.csv](bom.csv) | [PCB BOM.csv](kicad_V1/production/bom.csv)
 
 The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. Though, I did include a laptop charger and the LED strips that I already have. This comes out to 111.83 USD.
 
@@ -161,13 +161,17 @@ When choosing a microcontroller, I noticed that a lot of clone (knockoff) ESP32 
 
 #### PCB
 
-![PCB](https://github.com/user-attachments/assets/e44a234c-e4cd-436b-a006-abbbb84ec489)
+![PCB preview](https://github.com/user-attachments/assets/e44a234c-e4cd-436b-a006-abbbb84ec489)
 <!-- <img width="360" height="360" alt="PCB" src="" />   -->
 
 > [!CAUTION]
 >
 > - Ignore the capacitor going off the edge, the EasyEDA model is wrong
 > - The two parallel rows of vertical pin headers (for the devkit) should be female, again the EasyEDA model is wrong
+
+![PCB](https://github.com/user-attachments/assets/ca9f289d-d818-4d8c-a27c-0a4159c9f46f)
+
+![schematic](https://github.com/user-attachments/assets/5f59ff6f-4166-47da-8153-21a5a6b5ce97)
 
 About the design:
 
@@ -314,6 +318,10 @@ I used a ~1mm thick, 450mm square of EVA plastic intended to line drawers.
 [My local option (Australia)](https://www.rejectshop.com.au/p/drawer-and-shelf-liner-45x150cm)
 
 The top layer of conductive tape should be stuck to the bottom of this sheet, on the smooth side. This EVA layer can be adhered to the bottom construction with electrical tape, not just because it's easy to design, but because of it's suitable properties. The mat is designed to loosely roll up for easy transport/storage, requiring flexibility, and the edges must be soft to keep flying fingers/paws safe around the mat :)
+
+## the_past
+
+Just a quick note about the [kicad_V0](kicad_V0) and [kicad_V1](kicad_V1), I just uploaded V0 so you can see a previous design I made. I cobbled it together from backups so maybe double check whether it works if you plan to build it. 
 
 ## the_future
 
