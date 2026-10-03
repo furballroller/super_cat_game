@@ -326,16 +326,16 @@ The top layer of conductive tape should be stuck to the bottom of this sheet, on
 > [!CAUTION]
 > I cobbled V0 together from backups so maybe double check whether it works if you plan to build it. e.g. there's no copper exclusion around the antenna :<
 
-Just a quick note about the [kicad_V0](kicad_V0) and [kicad_V1](kicad_V1), I just uploaded V0 so you can see a previous design I made. I wanted to preserve more ESP32 GPIO pins, so I used counter ICs to cycle through the binary selection, using one clock pin for each counter instead of 4 pins to specify channel on the MUXs. I removed the counters to save board space and money, seeing that there are so many available GPIO anyway lol :>
+Just a quick note about the [kicad_V0](kicad_V0) and [kicad_V1](kicad_V1), I just uploaded V0 so you can see a previous design I made. I wanted to preserve more ESP32 GPIO pins, so I used counter ICs to cycle through the MUX channels of the sensor grid. This would've allowed me to step through each channel with just one clock pin per counter, compared to the 4 pins per counter I would've needed to control the MUX channel directly. It wouldn't have added much time either, as the counter works even faster than a digitalWrite()! Sending one clock pulse might even be more efficient than using Arduino to update the state of 4 pins... anyway, I decided to remove the counters in V1 to save board space and money, seeing as there are so many available GPIO anyway lol :>
 
 ## the_future
 
 Some ideas I have:
 
-- multiplexing/charlieplexing/shift registers instead of expensive neopixels
-- using an ESP32 S3 WROOM SOC module (no more clone devkit! Smaller and cheaper PCB)
-- using something like NeoPixelBus instead of FastLED to make the Arduino code faster/efficient
-- a way to attach/detatch IDC without needing to unscrew the lid (for portability/storage)
+- multiplexing/charlieplexing/shift registers with regular LEDs to replace expensive neopixels
+- using an ESP32 S3 WROOM SOC module for a smaller and cheaper PCB
+- using a library like NeoPixelBus instead of FastLED to make the Arduino code faster/efficient
+- somehow allowing IDC to attach/detatch without needing to unscrew the lid, for portability/storage
 
 Lemme know if you've got any suggestions!
 My email: [aydeny8k@gmail.com](mailto:aydeny8k@gmail.com)
