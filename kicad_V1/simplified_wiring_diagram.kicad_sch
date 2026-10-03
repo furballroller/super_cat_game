@@ -2823,6 +2823,46 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 87.63 99.06)
+		(end 104.14 129.54)
+		(stroke
+			(width 0.4064)
+			(type solid)
+			(color 255 2 2 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "eae0ae13-c68d-4676-8e50-ccd26bb9f7b2")
+	)
+	(rectangle
+		(start 88.9 78.74)
+		(end 95.25 88.9)
+		(stroke
+			(width 0.4064)
+			(type solid)
+			(color 255 2 2 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f35d5356-726d-4d68-9fce-d2a927cf121a")
+	)
+	(text "Resistance of Velostat\nis read through a\nvoltage divider"
+		(exclude_from_sim no)
+		(at 86.106 102.362 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 0 1)
+			)
+			(justify right)
+		)
+		(uuid "54ca2358-89f5-47c9-8ee9-9a3290ac42a9")
+	)
 	(text_box "VELOSTAT (every possible handshake)"
 		(exclude_from_sim no)
 		(at 105.2717 176.53 90)
@@ -2862,26 +2902,6 @@
 			(justify left top)
 		)
 		(uuid "3781fc5c-98f2-40d3-8d57-9f6276a04078")
-	)
-	(text_box "NOT ENOUGH GPIO"
-		(exclude_from_sim no)
-		(at 66.04 77.47 0)
-		(size 26.67 3.9483)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "45dbf3db-1602-4ddb-8d50-4a065b07a941")
 	)
 	(text_box "TO GND PLANE (IF THERE IS ONE)"
 		(exclude_from_sim no)
@@ -4041,6 +4061,12 @@
 			(uuid "183a96e1-1a8a-4b34-a9e9-d76af15c6c52")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR018")
@@ -4120,6 +4146,12 @@
 			(uuid "8ef3287b-4f77-4236-a9fa-a5ba30d88d3e")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "R3")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "R3")
@@ -4200,6 +4232,12 @@
 			(uuid "9ae86726-0be4-493f-a2aa-cc7a053ac8e9")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "R6")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "R6")
@@ -4282,6 +4320,12 @@
 			(uuid "9fe4c7c4-a5e4-4951-9c07-7beb828e549e")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "C4")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "C4")
@@ -4361,6 +4405,12 @@
 			(uuid "09b38e40-82ee-4d48-86aa-bea75a347a28")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "R8")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "R8")
@@ -4480,6 +4530,12 @@
 			(uuid "0a79ce14-c3bb-4fb6-8b70-15fd9b40623b")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "J3")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "J3")
@@ -4630,6 +4686,12 @@
 			(uuid "0bc66066-52e7-48a0-bbc8-38c3a3645814")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "U6")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "U6")
@@ -4718,6 +4780,12 @@
 			(uuid "90088073-b85b-4929-be62-94f04b66f895")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "D2")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "D2")
@@ -4796,6 +4864,12 @@
 			(uuid "68499019-3a85-4862-9d10-38146b86c158")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR017")
@@ -4826,7 +4900,7 @@
 				)
 			)
 		)
-		(property "Value" "WEMOS_C3_mini"
+		(property "Value" "[GENERIC uC]"
 			(at 81.28 67.818 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4918,6 +4992,12 @@
 			(uuid "7014e0cf-2c7e-47ea-b6db-a913ac33a08a")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "U5")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "U5")
@@ -4996,6 +5076,12 @@
 			(uuid "6caded4f-471e-4838-ad89-b3f8b6cb2236")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR025")
@@ -5074,6 +5160,12 @@
 			(uuid "114befd7-dfb0-46ef-bd8d-550ea4a27693")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR026")
@@ -5178,6 +5270,12 @@
 			(uuid "2c507942-097a-4577-adca-166bbd9474b7")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "D4")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "D4")
@@ -5266,6 +5364,12 @@
 			(uuid "b98a5c13-660d-41a5-b22a-883dbd2103ce")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "D1")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "D1")
@@ -5345,6 +5449,12 @@
 			(uuid "07706cd4-309a-4d5e-b9ce-749ad788804b")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR011")
@@ -5424,6 +5534,12 @@
 			(uuid "ba6b28da-4d45-4674-9fb0-44a4092b764c")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR015")
@@ -5502,6 +5618,12 @@
 			(uuid "777e2f08-c1e6-47a9-89da-b57770e54628")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR030")
@@ -5581,6 +5703,12 @@
 			(uuid "a42536b7-91bf-47d9-bada-0253dd962e8a")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR027")
@@ -5669,6 +5797,12 @@
 			(uuid "11e4a9e9-49a5-41d0-9bd5-f38ffd56a741")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "D3")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "D3")
@@ -5748,6 +5882,12 @@
 			(uuid "42cab0ab-8ff4-439d-a1d4-526149311629")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR029")
@@ -5827,6 +5967,12 @@
 			(uuid "08ad9af0-be9c-4aac-8676-cdf9fd895691")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "R7")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "R7")
@@ -5906,6 +6052,12 @@
 			(uuid "3a2c9630-5e82-4364-a024-7b746d031fe1")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR016")
@@ -6024,6 +6176,12 @@
 			(uuid "c3848a9e-56da-43a5-ab2a-2f7863ab75cf")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "RV1")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "RV1")
@@ -6173,6 +6331,12 @@
 			(uuid "09903746-0016-4101-867b-1db2adc6b27e")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "U7")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "U7")
@@ -6251,6 +6415,12 @@
 			(uuid "68b0e1c3-6166-4a67-953a-31fd1ab5c217")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR012")
@@ -6330,6 +6500,12 @@
 			(uuid "775311a7-4446-4dcf-a8d5-ef97cd2d1f80")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR0107")
@@ -6409,6 +6585,12 @@
 			(uuid "f3b2a5d0-c1e7-442f-958d-dfe276a4e393")
 		)
 		(instances
+			(project "circuit"
+				(path "/2ea3fbe2-2317-4d5c-acd1-47d626aa9ab4"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
 			(project "pressure_sense"
 				(path "/edae9709-4638-4181-a40a-db9d181d67f1"
 					(reference "#PWR010")
