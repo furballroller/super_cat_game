@@ -1,7 +1,7 @@
 # super_cat_game
 
 > [!CAUTION]
-> This is my first PCB, so right now it's probably not very good. It may be cost-inefficient and buggy.
+> The current hardware version is [hardware_v1](hardware_v1)!! Anyway, is my first PCB project, so neither version is very good. It may be cost-inefficient and buggy.
 
 > [!WARNING]
 > **if regenerating production files from KICAD, the LCSC Part # in the BOM and component orientations in CPL may be incorrect. Make sure to double check part numbers and orientation in JLCPCB before paying** I don't know how to fix it and had to directly edit BOM.csv :<
@@ -12,8 +12,8 @@
 _Final product:_
 
 - [_3D-printed case on Onshape_](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50) (proper assembly instructions below)
-- [_KiCAD Project_](super_cat_game_v1)
-- [_Arduino Sketches_](arduino_sketches) (PlatformIO IDE)
+- [_KiCAD Project_](hardware_v1)
+- [_Arduino Sketches_](software) (PlatformIO IDE)
 
 <img width="1748" height="2480" alt="A5 - 1 (1)" src="https://github.com/user-attachments/assets/2de8649b-de12-4aaa-9155-4af353fd5fe8" />
 
@@ -33,9 +33,9 @@ But you can program anything, not just for a cat! Chess online/locally would be 
 
 This project hardwires a pressure-sensitive LED mat to a powerful general-purpose devkit, intended for making inuitive arcade-style games (for a cat, if you'd like! :> )
 
-I used Arduino to code up a simple cat game ([Arduino sketch](arduino_sketches/cat_game)), where a laser dot darts around, avoids people, and resets the game when caught. To use this, just upload the code to the devkit (using it's built-in USB-C port), plug it into the PCB, then plug the PCB into the wall!
+I used Arduino to code up a simple cat game ([Arduino sketch](software/cat_game)), where a laser dot darts around, avoids people, and resets the game when caught. To use this, just upload the code to the devkit (using it's built-in USB-C port), plug it into the PCB, then plug the PCB into the wall!
 
-The devkit opens the project to endless posibilities, including bluetooth game controllers, network games, and over-the-air coding for easy game dev ([template Arduino sketch with ArduinoOTA](arduino_sketches/template+OTA)). This project is meant to function as a very cool extension of the microcontroller, for those who might want to jump straight into making games using this touch interface.
+The devkit opens the project to endless posibilities, including bluetooth game controllers, network games, and over-the-air coding for easy game dev ([template Arduino sketch with ArduinoOTA](software/template+OTA)). This project is meant to function as a very cool extension of the microcontroller, for those who might want to jump straight into making games using this touch interface.
 
 ### specs
 
@@ -49,7 +49,7 @@ The devkit opens the project to endless posibilities, including bluetooth game c
 
 ### cost
 
-[Overall BOM.csv](bom.csv) | [PCB BOM.csv](super_cat_game_v1/production/bom.csv)
+[Overall BOM.csv](bom.csv) | [PCB BOM.csv](hardware_v1/production/bom.csv)
 
 The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. Though, I did include a laptop charger and the LED strips that I already have. This comes out to 111.83 USD.
 
@@ -119,16 +119,16 @@ This is how the sensors are tiled
 
 ### code
 
-[My example sketches:](arduino_sketches) (currently untested)
+[My example sketches:](software) (currently untested)
 
-- [press_light](arduino_sketches/press_light): intended to be a test of function, that should simply light up LEDs around where you press. This would be great for making sure the hardware is behaving, or as a fun starting point if you want to experiment with code and get the hang of Arduino.
-- [cat_game](arduino_sketches/cat_game): a simple cat game where the computer controls a red laser-pointer-like dot to avoid people.
-- [template](arduino_sketches/template): an empty template for your project! I set up some useful functions in functions.cpp and put all the initialisation code in for you.
-- [template+OTA](arduino_sketches/template+OTA): same as [template](arduino_sketches/template), but I also set up [ArduinoOTA](https://github.com/JAndrassy/ArduinoOTA). I think it's really cool that you can upload code wirelesly like magic! ([a cool tutorial page](https://www.programmingelectronics.com/arduinoota/))
+- [press_light](software/press_light): intended to be a test of function, that should simply light up LEDs around where you press. This would be great for making sure the hardware is behaving, or as a fun starting point if you want to experiment with code and get the hang of Arduino.
+- [cat_game](software/cat_game): a simple cat game where the computer controls a red laser-pointer-like dot to avoid people.
+- [template](software/template): an empty template for your project! I set up some useful functions in functions.cpp and put all the initialisation code in for you.
+- [template+OTA](software/template+OTA): same as [template](software/template), but I also set up [ArduinoOTA](https://github.com/JAndrassy/ArduinoOTA). I think it's really cool that you can upload code wirelesly like magic! ([a cool tutorial page](https://www.programmingelectronics.com/arduinoota/))
 
 I used PlatformIO on Visual Studio Code to write my Arduino programs for the microcontroller. This may sound convoluted, but I did it this way because Arduino programs are easy to write (compared to industrial languages) but Arduino IDE is horrible!
 
-If you want to use Arduino IDE, you can quite easily copy-paste my code into the IDE. For a given project folder in [arduino_sketches](arduino_sketches), you just kinda paste the stuff from functions.cpp first, then the stuff from main.cpp... it may take a bit of fiddling around though, so I would recommend looking into PlatformIO (after getting used to it, I find it way way better :>)
+If you want to use Arduino IDE, you can quite easily copy-paste my code into the IDE. For a given project folder in [software](software), you just kinda paste the stuff from functions.cpp first, then the stuff from main.cpp... it may take a bit of fiddling around though, so I would recommend looking into PlatformIO (after getting used to it, I find it way way better :>)
 
 I used [FastLED](https://github.com/fastled/fastled) to control the WS2812B neopixels
 
@@ -326,7 +326,7 @@ The top layer of conductive tape should be stuck to the bottom of this sheet, on
 > [!CAUTION]
 > I cobbled V0 together from backups so maybe double check whether it works if you plan to build it. e.g. there's no copper exclusion around the antenna :<
 
-Just a quick note about the [super_cat_game_v0](super_cat_game_v0) and [super_cat_game_v1](super_cat_game_v1), I just uploaded v0 so you can see a previous design I made. I wanted to preserve more ESP32 GPIO pins, so I used counter ICs to cycle through the MUX channels of the sensor grid. This would've allowed me to step through each channel with just one clock pin per counter, compared to the 4 pins per counter I would've needed to control the MUX channel directly. It wouldn't have added much time either, as the counter works even faster than a digitalWrite()! Sending one clock pulse might even be more efficient than using Arduino to update the state of 4 pins... anyway, I decided to remove the counters in V1 to save board space and money, seeing as there are so many available GPIO anyway lol :>
+Just a quick note about the [hardware_v0](hardware_v0) and [hardware_v1](hardware_v1), I just uploaded v0 so you can see a previous design I made. I wanted to preserve more ESP32 GPIO pins, so I used counter ICs to cycle through the MUX channels of the sensor grid. This would've allowed me to step through each channel with just one clock pin per counter, compared to the 4 pins per counter I would've needed to control the MUX channel directly. It wouldn't have added much time either, as the counter works even faster than a digitalWrite()! Sending one clock pulse might even be more efficient than using Arduino to update the state of 4 pins... anyway, I decided to remove the counters in V1 to save board space and money, seeing as there are so many available GPIO anyway lol :>
 
 ## the_future
 
