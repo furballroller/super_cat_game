@@ -321,7 +321,11 @@ The top layer of conductive tape should be stuck to the bottom of this sheet, on
 
 ## the_past
 
-![V0](https://github.com/user-attachments/assets/acc3bd9c-9e46-4560-87b4-9d616e033b72)
+![V0 3D](https://github.com/user-attachments/assets/8a239f0e-a993-47fd-a8a7-1aeb9c9fac7e)
+
+![V0 PCB](https://github.com/user-attachments/assets/b7894948-3431-48a8-9042-61b57c91ee14)
+
+![V0 sch](https://github.com/user-attachments/assets/f5aedd54-6700-42ef-9c47-54068c89a27d)
 
 > [!CAUTION]
 > I cobbled V0 together from backups so maybe double check whether it works if you plan to build it. e.g. there's no copper exclusion around the antenna :<
