@@ -12,7 +12,7 @@
 _Final product:_
 
 - [_3D-printed case on Onshape_](https://cad.onshape.com/documents/4ded436d6b7f683e9c68b6fa/w/fe5cc562122e090332767be7/e/b2ba9b935da609d900851709?renderMode=0&uiState=6a58e4a5db7545b8e7dbac50) (proper assembly instructions below)
-- [_KiCAD Project_](kicad_V1)
+- [_KiCAD Project_](super_cat_game_v1)
 - [_Arduino Sketches_](arduino_sketches) (PlatformIO IDE)
 
 <img width="1748" height="2480" alt="A5 - 1 (1)" src="https://github.com/user-attachments/assets/2de8649b-de12-4aaa-9155-4af353fd5fe8" />
@@ -49,7 +49,7 @@ The devkit opens the project to endless posibilities, including bluetooth game c
 
 ### cost
 
-[Overall BOM.csv](bom.csv) | [PCB BOM.csv](kicad_V1/production/bom.csv)
+[Overall BOM.csv](bom.csv) | [PCB BOM.csv](super_cat_game_v1/production/bom.csv)
 
 The overall BOM represents what I plan to order: 5 populated PCB boards (JLCPCB minimum order quantity), but only 1 housing/mat/devkit. Though, I did include a laptop charger and the LED strips that I already have. This comes out to 111.83 USD.
 
@@ -326,7 +326,7 @@ The top layer of conductive tape should be stuck to the bottom of this sheet, on
 > [!CAUTION]
 > I cobbled V0 together from backups so maybe double check whether it works if you plan to build it. e.g. there's no copper exclusion around the antenna :<
 
-Just a quick note about the [kicad_V0](kicad_V0) and [kicad_V1](kicad_V1), I just uploaded V0 so you can see a previous design I made. I wanted to preserve more ESP32 GPIO pins, so I used counter ICs to cycle through the MUX channels of the sensor grid. This would've allowed me to step through each channel with just one clock pin per counter, compared to the 4 pins per counter I would've needed to control the MUX channel directly. It wouldn't have added much time either, as the counter works even faster than a digitalWrite()! Sending one clock pulse might even be more efficient than using Arduino to update the state of 4 pins... anyway, I decided to remove the counters in V1 to save board space and money, seeing as there are so many available GPIO anyway lol :>
+Just a quick note about the [super_cat_game_v0](super_cat_game_v0) and [super_cat_game_v1](super_cat_game_v1), I just uploaded v0 so you can see a previous design I made. I wanted to preserve more ESP32 GPIO pins, so I used counter ICs to cycle through the MUX channels of the sensor grid. This would've allowed me to step through each channel with just one clock pin per counter, compared to the 4 pins per counter I would've needed to control the MUX channel directly. It wouldn't have added much time either, as the counter works even faster than a digitalWrite()! Sending one clock pulse might even be more efficient than using Arduino to update the state of 4 pins... anyway, I decided to remove the counters in V1 to save board space and money, seeing as there are so many available GPIO anyway lol :>
 
 ## the_future
 
