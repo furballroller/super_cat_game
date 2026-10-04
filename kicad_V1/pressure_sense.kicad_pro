@@ -739,7 +739,7 @@
     ]
   ],
   "text_variables": {
-    "EASYEDA2KICAD": "${KIPRJMOD}/easyeda2kicad"
+    "EASYEDA2KICAD": "${KIPRJMOD}/lib/easyeda2kicad"
   },
   "tuning_profiles": {
     "meta": {

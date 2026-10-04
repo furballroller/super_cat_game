@@ -1,5 +1,5 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "footprints") (type "KiCad") (uri "${KIPRJMOD}") (options "") (descr ""))
-	(lib (name "easyeda2kicad") (type "KiCad") (uri "${KIPRJMOD}/easyeda2kicad/easyeda2kicad.pretty") (options "") (descr ""))
+	(lib (name "footprints") (type "KiCad") (uri "${KIPRJMOD}/lib/furballroller_footprints.pretty") (options "") (descr ""))
+	(lib (name "easyeda2kicad") (type "KiCad") (uri "${KIPRJMOD}/lib/easyeda2kicad/easyeda2kicad.pretty") (options "") (descr ""))
 )

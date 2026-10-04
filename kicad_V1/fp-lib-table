@@ -1,6 +1,6 @@
 (fp_lib_table
 	(version 7)
-	(lib (name "footprints") (type "KiCad") (uri "/Users/furballroller/Documents/GitHub/super_cat_game/kicad-project") (options "") (descr ""))
-	(lib (name "easyeda2kicad") (type "KiCad") (uri "${KIPRJMOD}/easyeda2kicad/easyeda2kicad.pretty") (options "") (descr ""))
-	(lib (name "qr") (type "KiCad") (uri "${KIPRJMOD}/qr.pretty") (options "") (descr ""))
+	(lib (name "footprints") (type "KiCad") (uri "${KIPRJMOD}/lib/furballroller_footprints.pretty") (options "") (descr ""))
+	(lib (name "easyeda2kicad") (type "KiCad") (uri "${KIPRJMOD}/lib/easyeda2kicad/easyeda2kicad.pretty") (options "") (descr ""))
+	(lib (name "qr") (type "KiCad") (uri "${KIPRJMOD}/lib/qr.pretty") (options "") (descr ""))
 )
